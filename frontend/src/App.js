@@ -1,10 +1,16 @@
+import Routes from './Routes';
+import { CssBaseline, ThemeProvider } from '@material-ui/core';
+import MuiTheme from './themes/MuiThemes/MuiTheme';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      hello world
-    </div>
+    <ThemeProvider theme={MuiTheme}>
+      <div className="App">
+        <CssBaseline />
+        <Routes />
+      </div>
+    </ThemeProvider>
   );
 }
 
