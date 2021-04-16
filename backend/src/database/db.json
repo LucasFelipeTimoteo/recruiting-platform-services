@@ -1,0 +1,182 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Café duplo",
+      "image": {
+        "src": "images/cafe-duplo.svg",
+        "description": "A cup of double coffee"
+      },
+      "time": 45,
+      "complements": [
+        {
+          "name": "Açucar",
+          "image": {
+            "src": "images/acucar.svg",
+            "description": "Three sugar cubes"
+          },
+          "time": 30
+        },
+        {
+          "name": "Leite desnatado",
+          "image": {
+            "src": "images/leite.svg",
+            "description": "A jar of milk"
+          },
+          "time": 20
+        },
+        {
+          "name": "Chantilly",
+          "image": {
+            "src": "images/chantilly.svg",
+            "description": "A tub of chantilly"
+          },
+          "time": 55
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Café expresso",
+      "image": {
+        "src": "images/coffee.svg",
+        "description": "A cup of hot coffee"
+      },
+      "time": 45,
+      "complements": [
+        {
+          "name": "Açucar",
+          "image": {
+            "src": "images/acucar.svg",
+            "description": "Three sugar cubes"
+          },
+          "time": 30
+        },
+        {
+          "name": "Leite desnatado",
+          "image": {
+            "src": "images/leite.svg",
+            "description": "A jar of milk"
+          },
+          "time": 20
+        },
+        {
+          "name": "Chantilly",
+          "image": {
+            "src": "images/chantilly.svg",
+            "description": "A tub of chantilly"
+          },
+          "time": 55
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mocha",
+      "image": {
+        "src": "images/mocha.svg",
+        "description": "A glass of mocha with straw"
+      },
+      "time": 230,
+      "complements": [
+        {
+          "name": "Açucar",
+          "image": {
+            "src": "images/acucar.svg",
+            "description": "Three sugar cubes"
+          },
+          "time": 30
+        },
+        {
+          "name": "Leite desnatado",
+          "image": {
+            "src": "images/leite.svg",
+            "description": "A jar of milk"
+          },
+          "time": 20
+        },
+        {
+          "name": "Chantilly",
+          "image": {
+            "src": "images/chantilly.svg",
+            "description": "A tub of chantilly"
+          },
+          "time": 55
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Americano",
+      "image": {
+        "src": "images/cafe-americano.svg",
+        "description": "A plastic cup of café americano"
+      },
+      "time": 230,
+      "complements": [
+        {
+          "name": "Açucar",
+          "image": {
+            "src": "images/acucar.svg",
+            "description": "Three sugar cubes"
+          },
+          "time": 30
+        },
+        {
+          "name": "Leite desnatado",
+          "image": {
+            "src": "images/leite.svg",
+            "description": "A jar of milk"
+          },
+          "time": 20
+        },
+        {
+          "name": "Chantilly",
+          "image": {
+            "src": "images/chantilly.svg",
+            "description": "A tub of chantilly"
+          },
+          "time": 55
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Cappuccino",
+      "image": {
+        "src": "images/cappuccino.svg",
+        "description": "A tea-cup of cappuccino"
+      },
+      "time": 230,
+      "complements": [
+        {
+          "name": "Açucar",
+          "image": {
+            "src": "images/acucar.svg",
+            "description": "Three sugar cubes"
+          },
+          "time": 30
+        },
+        {
+          "name": "Leite desnatado",
+          "image": {
+            "src": "images/leite.svg",
+            "description": "A jar of milk"
+          },
+          "time": 20
+        },
+        {
+          "name": "Chantilly",
+          "image": {
+            "src": "images/chantilly.svg",
+            "description": "A tub of chantilly"
+          },
+          "time": 55
+        }
+      ]
+    }
+  ],
+  "coupon": {
+    "code": "SC123456"
+  }
+}
