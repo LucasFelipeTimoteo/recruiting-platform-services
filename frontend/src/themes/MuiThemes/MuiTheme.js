@@ -11,10 +11,7 @@ let MuiTheme = createMuiTheme({
 
   palette: {
     primary: {
-      main: '#001a35f2'
-    },
-    secondary: {
-      main: '#2ee897e7',
+      main: '#001a35f2',
       contrastText: '#fff'
     },
     background: {
