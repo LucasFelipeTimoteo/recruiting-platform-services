@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Teste para recutramento Plataforma e Serviços
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### A Alboom
 
-## Available Scripts
+A Alboom é hoje a maior plataforma de serviços digitais para fotógrafos e artistas visuais da América Latina. Englobamos a maior diversidade de produtos e serviços para fotógrafos, contando com sites profissionais, aprovação de fotos, aprovação de álbum, aprovação de vídeos, criação de galerias, CRM para fotógrafos e muito mais. Além disso temos como missão ser uma plataforma multi aplicação possuindo uma gigantesca camada de micro-serviços entregando a melhor experiência para nossos usuários.
 
-In the project directory, you can run:
+Reconhece a importância da igualdade de oportunidades e o respeito ao ser humano. Valorizamos a diversidade e temos convicção de que todos podem fazer algo que mudará o mundo ou a vida de alguém para melhor.
 
-### `npm start`
+### Contexto do projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A **Alboom** decidiu participar da primeira edição da _FENAFAC_ (Feira Nacional dos Fotógrafos Amantes de Café), onde ofereceremos cupons promocionais de nossos produtos aos participantes.
+Como forma de inovar e mostrar que o cliente é sempre a sua maior preocupação, tivemos a ideia de oferecer este cupom através de um totem de autoatendimento onde o cliente também poderá solicitar e apreciar um delicioso café.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Cada fotógrafo terá direito de solicitar um único pedido contendo, no máximo, dois itens. Para solicitar o pedido, a pessoa deverá informar seu **nome** e **e-mail**.
 
-### `npm test`
+No próximo passo, utilizando nosso cardápio, ele poderá escolher entre diferentes receitas, assim como personalizá-las, adicionando complementos ao seu pedido. Ao final do pedido, será contabilizado o tempo total de preparo dos itens escolhidos, que será utilizado para alimentar uma contagem regressiva, o que aumentará ainda mais a vontade deste fotógrafo sedento de cafeína!!!!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Porém, enquanto aguarda, nosso querido amigo e potencial cliente poderá solicitar a impressão de seu _cupom_ de desconto para adquirir um de nossos produtos. Esperamos que o nosso querido  fotógrafo possa voltar às atividades da feira em posse do seu cupom de desconto e de seu delicioso café, fornecidos eficientemente pelo nosso inovador totem de autoatendimento para fotógrafos apreciadores de café!
 
-### `npm run build`
+### Instruções
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Crie uma conta no [github.com](https://www.github.com/);
+1. Faça um fork e clone do projeto;
+1. Crie uma branch (utilize seu nome);
+1. Execute o arquivo SQL presente no projeto para criar e popular seu banco de dados;
+1. Estude as telas que estão no [zeplin](https://scene.zeplin.io/project/5a79d3ac106e052f5474d94a);
+1. Crie uma aplicação implementando uma solução para o cenário apresentado;
+8. Submeta o Pull Request e envie um email para recruit@alboompro.com;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**PS:** Usamos o mesmo teste para todos os níveis: **junior**, **pleno** ou **senior**, mas procuramos adequar nossa exigência na avaliação com cada um desses níveis sem, por exemplo, exigir excelência de quem está começando.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Esperamos que você
 
-### `npm run eject`
+* Desenvolva sua aplicação utilizando uma das seguintes linguagens: Ruby, PHP, Javascript;
+* Otimize a aplicação ao máximo;
+* Especifique o projeto no `README.md`, inclua etapas necessárias para sua utilização;
+* Documente suas tomadas de decisões e inclua um diário do projeto em um arquivo HISTORY.md;
+* Faça commits pequenos e bem especificados;
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Você também pode, por exemplo
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Utilizar frameworks como rails, laravel, express ou similar;
