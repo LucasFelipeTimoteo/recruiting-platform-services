@@ -71,3 +71,10 @@
 - Implementação de testes unitários nas util functions relacioanadas à conversão do tempo em minutos
 
 - Devido a problemas com o git por ele não aceitar o tamanho dos nomes de alguns arquivos de teste, deixarei para resolver esse problema e realizar os commits dos testes de hoje para amanhã
+
+# 17/04/2021
+  - apenas corrigi o problema do git
+    - fiz isso adicionando a opção longpath=true no arquivo presente em .git/config
+
+# 19/04/2021
+  - apenas movi algumas subpastas do 'utils' e do 'parts' e modifiquei pequenas coisas, pois percebi que seriam reutilizadas em outras páginas. Depois tive que me focar em outros trabalhos.
