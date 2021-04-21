@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import toggleRecipeCheckbox from '../../utils/RecipeSelect/toggleRecipeCheckbox'
+import toggleRecipeCheckbox from '../../utils/GLOBAL/toggleRecipeCheckbox'
 
 export default function useRecipesChecklist(recipes) {
   const [recipesChecklist, setRecipesCheckList] = useState([])
