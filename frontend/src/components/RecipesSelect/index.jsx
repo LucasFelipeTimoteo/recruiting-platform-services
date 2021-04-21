@@ -1,14 +1,14 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
 
-import CheckboxImage from '../../parts/RecipesSelectParts/CheckboxImage'
+import CheckboxImage from '../../parts/GLOBAL/CheckboxImage'
 import useRecipes from '../../hooks/recipesSelectHooks/useRecipes'
 import useRecipesChecklist from '../../hooks/recipesSelectHooks/useRecipesChecklist'
 
-import RecipeTime from '../../parts/RecipesSelectParts/RecipeTime'
+import RecipeTime from '../../parts/GLOBAL/RecipeTime'
 
 import useRecipesSelectStyles from './styles'
-import RecipesThumbnail from '../../parts/RecipesSelectParts/RecipeThumbnail'
+import RecipesThumbnail from '../../parts/GLOBAL/RecipeThumbnail'
 import ListItem from '../../parts/RecipesSelectParts/ListItem'
 import ContinueButton from '../../parts/RecipesSelectParts/ContinueButton'
 
