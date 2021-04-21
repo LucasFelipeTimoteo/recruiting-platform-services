@@ -1,6 +1,5 @@
 import React from 'react'
 import useLogoRecipe from '../../hooks/recipesSelectHooks/useLogoRecipe'
-
 import useEmail from '../../hooks/registerFormHooks/email/useEmail'
 import useFullname from '../../hooks/registerFormHooks/fullName/useFullname'
 
@@ -35,7 +34,10 @@ export default function RegisterForm() {
           handleEmail={handleEmail}
         />
       </div>
-      <RegisterButton />
+      <RegisterButton
+        fullName={fullName}
+        email={email}
+      />
     </form>
   )
 }
