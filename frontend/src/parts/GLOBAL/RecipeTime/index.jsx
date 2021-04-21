@@ -12,7 +12,7 @@ export default function RecipeTime({ recipe }) {
   return (
     <div className={styles.timeWrapper}>
       <TimeIcon className={styles.timeIcon} />
-      <Typography variant="subtitle2" className={styles.time}>
+      <Typography variant="body2" className={styles.time}>
         {parsedTime}
       </Typography>
     </div>
