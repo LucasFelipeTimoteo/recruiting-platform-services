@@ -1,7 +1,7 @@
 import React from 'react'
 import useCheckboxStyles from './styles'
 
-export default function CheckboxImage({ checked }) {
+export default function CheckboxImage({ checked, small }) {
   const styles = useCheckboxStyles()
   const src = checked ? 'check-ok.svg' : 'check-empty.svg'
 
@@ -9,7 +9,10 @@ export default function CheckboxImage({ checked }) {
     <img
       src={`${process.env.PUBLIC_URL}images/${src}`}
       alt="test"
-      className={styles.checkbox}
+      className={`
+        ${styles.checkbox}
+        ${small && styles.smallCheckbox}
+      `}
     />
   )
 }
