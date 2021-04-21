@@ -73,8 +73,23 @@
 - Devido a problemas com o git por ele não aceitar o tamanho dos nomes de alguns arquivos de teste, deixarei para resolver esse problema e realizar os commits dos testes de hoje para amanhã
 
 # 17/04/2021
-  - apenas corrigi o problema do git
-    - fiz isso adicionando a opção longpath=true no arquivo presente em .git/config
+- apenas corrigi o problema do git
+  - fiz isso adicionando a opção longpath=true no arquivo presente em .git/config
 
 # 19/04/2021
-  - apenas movi algumas subpastas do 'utils' e do 'parts' e modifiquei pequenas coisas, pois percebi que seriam reutilizadas em outras páginas. Depois tive que me focar em outros trabalhos.
+- apenas movi algumas subpastas do 'utils' e do 'parts' e modifiquei pequenas coisas, pois percebi que seriam reutilizadas em outras páginas. Depois tive que me focar em outros trabalhos.
+
+# 20/04/2021
+- Criação do componente de selecão das receitas
+
+- Criação do componente de complementos
+  - Não foi finalizado, apenas criei a estruturas, estilos e a lógica dos checkbox, que foi reaproveirada do componente de recipes
+  - Ao final, percebi alguns problemas gerados pelo fluxo de dados atual, estou pensando se autero todo o fluxo da aplicação ou se resolvo de outra maneira
+    - a hierarquia de componentes criada está dificiltando obter os dados das receitas selecionadas em um escopo mais global dentro do componente da lista de receitas
+      - o principal motivo é que o atributo "checked" é atribuído depois de obter a lista dos dados puros dentro de um map
+
+- Hoje também refleti sobre algumas coisas que me arrependi um pouco de ter feito e que podiam terer sido implementados de uma maneira melhor, mas que não posso mais mudar
+  - não listarei isso agora, deixarei um tópico de postos a melhorar no final do projeto
+
+- também reparei que alguns componentes não foram componentizados e que poderiam ser de maneira global para o reuso na lista de recipes e de complements
+  - deixarei essa refatoração para um outro momento
