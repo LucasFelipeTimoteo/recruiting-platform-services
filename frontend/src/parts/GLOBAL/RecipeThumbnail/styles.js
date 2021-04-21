@@ -15,6 +15,16 @@ const useRecipeThumbnailStyles = makeStyles(theme => ({
       left: '-5px'
     }
   },
+
+  smallRecipeThumbnail: {
+    height: 40,
+    width: 40,
+
+    [theme.breakpoints.down(theme.breakpoints.values.sm)]: {
+      height: 36,
+      width: 36,
+    }
+  }
 }))
 
 export default useRecipeThumbnailStyles

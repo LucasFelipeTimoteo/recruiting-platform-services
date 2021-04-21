@@ -1,7 +1,7 @@
 import React from 'react'
 import useRecipeThumbnailStyles from './styles'
 
-export default function RecipesThumbnail({ recipe }) {
+export default function RecipesThumbnail({ recipe, small }) {
   const styles = useRecipeThumbnailStyles()
 
   return (
@@ -10,7 +10,10 @@ export default function RecipesThumbnail({ recipe }) {
         src={`${process.env.PUBLIC_URL}${recipe.image.src}`}
         alt={recipe.description}
         title={recipe.name}
-        className={styles.recipeThumbnail}
+        className={
+          `${styles.recipeThumbnail}
+           ${small && styles.smallRecipeThumbnail}`
+        }
       />
     </>
   )
