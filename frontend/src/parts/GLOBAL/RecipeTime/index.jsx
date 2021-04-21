@@ -3,7 +3,7 @@ import { Typography } from '@material-ui/core'
 import { History as TimeIcon } from '@material-ui/icons'
 
 import useTimeStyles from './styles'
-import parseNumberToMinutes from '../../../utils/ComplementsSelect/parseNumberToMinutes'
+import parseNumberToMinutes from '../../../utils/GLOBAL/parseNumberToMinutes'
 
 export default function RecipeTime({ recipe }) {
   const styles = useTimeStyles()
