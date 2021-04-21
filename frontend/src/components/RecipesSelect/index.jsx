@@ -26,6 +26,7 @@ export default function RecipesSelect() {
             <ListItem
               key={recipe.id}
               recipe={recipe}
+              recipesChecklist={recipesChecklist}
               handleRecipeChecklist={handleRecipeChecklist}
             >
               <RecipesThumbnail recipe={recipe} />
