@@ -5,7 +5,7 @@ import useRecipesChecklist from '../../../hooks/recipesSelectHooks/useRecipesChe
 import CheckboxImage from '../../GLOBAL/CheckboxImage'
 import RecipeThumbnail from '../../GLOBAL/RecipeThumbnail'
 import RecipeTime from '../../GLOBAL/RecipeTime'
-import ComplementsListItem from '../ListItem'
+import ComplementsListItem from '../ComplementsListItem'
 import useComplementsListStyles from './styles'
 
 export default function ComplementsList({ recipe }) {
