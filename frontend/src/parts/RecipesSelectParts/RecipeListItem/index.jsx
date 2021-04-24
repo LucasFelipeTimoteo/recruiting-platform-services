@@ -2,7 +2,7 @@ import React from 'react'
 import useIngredientsChecklistContext from '../../../contexts/IngredientsChecklist/hooks/useIngredientsChecklistContext'
 import useListItemStyles from './styles'
 
-export default function ListItem({
+export default function RecipeListItem({
   children,
   recipe,
 }) {
