@@ -5,6 +5,6 @@ const recipesRouter = require('./routes/recipesRouter')
 
 const app = express()
 app.use(cors())
-app.use('/recipes', recipesRouter)
+app.use('/ingredients', recipesRouter)
 
 module.exports = app
