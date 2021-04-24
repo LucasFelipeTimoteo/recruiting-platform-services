@@ -5,9 +5,9 @@ import { History as TimeIcon } from '@material-ui/icons'
 import useTimeStyles from './styles'
 import parseNumberToMinutes from '../../../utils/GLOBAL/parseNumberToMinutes'
 
-export default function RecipeTime({ recipe }) {
+export default function RecipeTime({ ingredient }) {
   const styles = useTimeStyles()
-  const parsedTime = parseNumberToMinutes(recipe.time)
+  const parsedTime = parseNumberToMinutes(ingredient.time)
 
   return (
     <div className={styles.timeWrapper}>
