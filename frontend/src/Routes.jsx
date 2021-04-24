@@ -3,13 +3,12 @@ import {
   BrowserRouter as Router,
   Redirect,
   Route,
-  Switch,
+  Switch
 } from 'react-router-dom'
 
+import Coffees from './pages/Coffees'
 import Register from './pages/Register'
-import Recipes from './pages/Recipes'
 import Standby from './pages/Standby'
-import Complements from './pages/Complements'
 
 export default function Routes() {
   return (
@@ -18,11 +17,8 @@ export default function Routes() {
         <Route path="/register">
           <Register />
         </Route>
-        <Route path="/recipes">
-          <Recipes />
-        </Route>
-        <Route path="/complements">
-          <Complements />
+        <Route path="/coffees">
+          <Coffees />
         </Route>
         <Route path="/standby">
           <Standby />
