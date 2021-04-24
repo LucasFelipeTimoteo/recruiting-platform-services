@@ -1,14 +1,15 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
 
-import getRecipesStorage from '../../../utils/RecipesSelect/getRecipesStorage'
 import ComplementsList from '../ComplementsList'
 import RecipeThumbnail from '../../GLOBAL/RecipeThumbnail'
 
 import useComplementsListStyles from './styles'
+import useIngredientsChecklistContext from '../../../contexts/IngredientsChecklist/hooks/useIngredientsChecklistContext'
 
 export default function SelectedRecipesComplementsList() {
-  const selectedRecipes = getRecipesStorage()
+  const { ingredientsChecklist } = useIngredientsChecklistContext()
+  const selectedRecipes = ingredientsChecklist.filter(recipe => recipe.checked)
   const styles = useComplementsListStyles()
 
   return (
