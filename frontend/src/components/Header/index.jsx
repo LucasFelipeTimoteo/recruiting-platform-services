@@ -3,30 +3,17 @@ import React from 'react'
 import Subtitle from '../../parts/HeaderParts/Subtitle'
 import Title from '../../parts/HeaderParts/Title'
 
-import useThumbnail from '../../hooks/thubmbnail/useThumbnail'
-
 import useHeaderStyles from './styles'
+import RecipeLogo from '../../parts/GLOBAL/RecipeLogo'
 
 
 export default function Header() {
-  const {
-    thumbnailIngredientDescription,
-    thumbnailIngredientPath,
-    thumbnailIngredientName,
-  } = useThumbnail()
-
   const styles = useHeaderStyles()
 
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-        <img
-          src={`${process.env.PUBLIC_URL}${thumbnailIngredientPath}`}
-          alt={thumbnailIngredientDescription}
-          title={thumbnailIngredientName}
-          className={styles.logo}
-        />
-
+        <RecipeLogo />
         <div className={styles.titleAndSubtitleGroup}>
           <Title />
           <Subtitle />
