@@ -1,13 +1,12 @@
 import React from 'react'
-import setRecipesStorage from '../../../utils/RecipesSelect/setRecipesStorage'
+import useIngredientsChecklistContext from '../../../contexts/IngredientsChecklist/hooks/useIngredientsChecklistContext'
 import useListItemStyles from './styles'
 
 export default function ListItem({
   children,
   recipe,
-  recipesChecklist,
-  handleRecipeChecklist,
 }) {
+  const { handleRecipesChecklist } = useIngredientsChecklistContext()
   const styles = useListItemStyles()
 
   return (
@@ -15,8 +14,7 @@ export default function ListItem({
       <li
         className={styles.listItem}
         onClick={() => {
-          handleRecipeChecklist(recipe)
-          setRecipesStorage(recipesChecklist)
+          handleRecipesChecklist(recipe)
         }}
       >
         {children}
