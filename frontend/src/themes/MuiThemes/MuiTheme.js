@@ -16,12 +16,19 @@ let MuiTheme = createMuiTheme({
     },
     background: {
       default: '#ebebeb'
+    },
+    text: {
+      primary: '#5E4429'
     }
+    
   },
 
   typography: {
     button: {
       letterSpacing: 3
+    },
+    allVariants: {
+      fontFamily: 'Montserrat'
     }
   },
 
