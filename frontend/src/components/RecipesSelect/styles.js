@@ -9,12 +9,6 @@ const useRecipesSelectStyles = makeStyles({
     width: '100vw',
     padding: 0,
     margin: '6px 0 10px 0',
-  },
-
-  recipeInfoGroup: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-start',
   }
 })
 
