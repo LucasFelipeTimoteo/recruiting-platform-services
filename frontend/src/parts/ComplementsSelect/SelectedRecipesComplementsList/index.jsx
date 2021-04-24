@@ -7,6 +7,7 @@ import RecipeThumbnail from '../../GLOBAL/RecipeThumbnail'
 import useComplementsListStyles from './styles'
 import useIngredientsChecklistContext from '../../../contexts/IngredientsChecklist/hooks/useIngredientsChecklistContext'
 import selectedRecipes from '../../../utils/GLOBAL/selectedRecipes'
+import RecipeName from '../../GLOBAL/RecipeName'
 
 export default function SelectedRecipesComplementsList() {
   const { ingredientsChecklist } = useIngredientsChecklistContext()
@@ -22,7 +23,7 @@ export default function SelectedRecipesComplementsList() {
             <li className={styles.recipeAndComplementsListItem}>
               <div className={styles.recipeInfo}>
                 <RecipeThumbnail recipe={recipe} />
-                <Typography>{recipe.name}</Typography>
+                <RecipeName ingredient={recipe} />
               </div>
               <ComplementsList recipe={recipe} />
             </li>
