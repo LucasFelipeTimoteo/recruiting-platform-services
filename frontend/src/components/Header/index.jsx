@@ -3,17 +3,17 @@ import React from 'react'
 import Subtitle from '../../parts/HeaderParts/Subtitle'
 import Title from '../../parts/HeaderParts/Title'
 
-import useLogoRecipe from '../../hooks/recipesSelectHooks/useLogoRecipe'
+import useThumbnail from '../../hooks/thubmbnail/useThumbnail'
 
 import useHeaderStyles from './styles'
 
 
 export default function Header() {
-  const { 
-    logoRecipePath,
-    logoRecipeDescription,
-    logoRecipeName
-  } = useLogoRecipe()
+  const {
+    thumbnailIngredientDescription,
+    thumbnailIngredientPath,
+    thumbnailIngredientName,
+  } = useThumbnail()
 
   const styles = useHeaderStyles()
 
@@ -21,9 +21,9 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.headerContent}>
         <img
-          src={`${process.env.PUBLIC_URL}${logoRecipePath}`}
-          alt={logoRecipeDescription}
-          title={logoRecipeName}
+          src={`${process.env.PUBLIC_URL}${thumbnailIngredientPath}`}
+          alt={thumbnailIngredientDescription}
+          title={thumbnailIngredientName}
           className={styles.logo}
         />
 
