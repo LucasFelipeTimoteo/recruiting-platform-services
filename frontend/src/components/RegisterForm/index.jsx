@@ -15,20 +15,22 @@ export default function RegisterForm() {
   const { email, handleEmail } = useEmail()
 
   const {
-    thumbnailRecipeDescription,
-    thumbnailRecipePath,
-    thumbnailRecipeName
+    thumbnailIngredientDescription,
+    thumbnailIngredientPath,
+    thumbnailIngredientName,
   } = useThumbnail()
+
+  console.log(thumbnailIngredientDescription)
 
   const styles = useRegisterFormStyles()
 
   return (
     <form className={styles.form} >
       <img
-        src={`${process.env.PUBLIC_URL}${thumbnailRecipePath}`}
-        alt={thumbnailRecipeDescription}
+        src={`${process.env.PUBLIC_URL}${thumbnailIngredientPath}`}
+        alt={thumbnailIngredientDescription}
         className={styles.logo}
-        title={thumbnailRecipeName}
+        title={thumbnailIngredientName}
       />
       <div className={styles.inputsWrapper}>
         <FullName
