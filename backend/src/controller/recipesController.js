@@ -1,28 +1,28 @@
 const api = require("../services/api")
 
-module.exports.getRecipes = async ({ res }) => {
+module.exports.getIngredients = async ({ res }) => {
   try {
-    const request = await api.get('/recipes')
-    const recipes = request.data
+    const request = await api.get('/ingredients')
+    const ingredients = request.data
 
-    res.json(recipes)
+    res.json(ingredients)
   }
   catch (error) {
     res.status(404).json({ error })
   }
 }
 
-module.exports.getLogoRecipe = async (req, res) => {
+module.exports.getLogoIngredients = async (req, res) => {
   try {
     const id = req.params.id
-    const request = await api.get(`/recipes/${id}`)
-    const recipeData = request.data
+    const request = await api.get(`/ingredients/${id}`)
+    const ingredientData = request.data
 
-    const recipeImage = recipeData.image
-    const recipeName = recipeData.name
-    const recipe = {recipeName, recipeImage}
+    const ingredientImage = ingredientData.image
+    const ingredientName = ingredientData.name
+    const ingredient = {ingredientName, ingredientImage}
 
-    res.json(recipe)
+    res.json(ingredient)
   }
   catch (error) {
     res.status(404).json({ error })
