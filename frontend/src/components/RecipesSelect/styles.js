@@ -15,10 +15,6 @@ const useRecipesSelectStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
-  },
-
-  recipe: {
-    gridArea: 'recipe'
   }
 })
 
