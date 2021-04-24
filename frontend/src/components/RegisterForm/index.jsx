@@ -1,5 +1,6 @@
 import React from 'react'
-import useLogoRecipe from '../../hooks/recipesSelectHooks/useLogoRecipe'
+
+import useThumbnail from '../../hooks/thubmbnail/useThumbnail'
 import useEmail from '../../hooks/registerFormHooks/email/useEmail'
 import useFullname from '../../hooks/registerFormHooks/fullName/useFullname'
 
@@ -10,19 +11,24 @@ import RegisterButton from '../../parts/FormParts/RegisterButton'
 import useRegisterFormStyles from './styles'
 
 export default function RegisterForm() {
-  const { logoRecipePath, logoRecipeDescription, logoRecipeName } = useLogoRecipe()
   const { fullName, handleFullName } = useFullname()
   const { email, handleEmail } = useEmail()
+
+  const {
+    thumbnailRecipeDescription,
+    thumbnailRecipePath,
+    thumbnailRecipeName
+  } = useThumbnail()
 
   const styles = useRegisterFormStyles()
 
   return (
     <form className={styles.form} >
       <img
-        src={`${process.env.PUBLIC_URL}${logoRecipePath}`}
-        alt={logoRecipeDescription}
+        src={`${process.env.PUBLIC_URL}${thumbnailRecipePath}`}
+        alt={thumbnailRecipeDescription}
         className={styles.logo}
-        title={logoRecipeName}
+        title={thumbnailRecipeName}
       />
       <div className={styles.inputsWrapper}>
         <FullName
