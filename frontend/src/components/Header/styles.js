@@ -13,7 +13,6 @@ const useHeaderStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'flex-start',
 
-    color: '#45321e',
     width: '90vw',
     padding: '10px 0',
     border: '10px solid transparent',
@@ -21,21 +20,6 @@ const useHeaderStyles = makeStyles(theme => ({
 
     [theme.breakpoints.down(theme.breakpoints.values.sm)]: {
       width: '96vw'
-    }
-  },
-
-  logo: {
-    height: 63,
-    width: 63,
-    margin: '0 10px',
-    userSelect: 'none',
-
-    [theme.breakpoints.down(theme.breakpoints.values.sm)]: {
-      width: 58,
-      height: 58,
-      margin: '0, 5px',
-      position: 'relative',
-      left: '-5px'
     }
   },
 
