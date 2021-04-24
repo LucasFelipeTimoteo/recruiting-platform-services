@@ -11,10 +11,6 @@ const useComplementsListStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
-  },
-
-  complementName: {
-    letterSpacing: 1
   }
 })
 
