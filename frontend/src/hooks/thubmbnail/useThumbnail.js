@@ -2,20 +2,20 @@ import { useEffect, useState } from 'react'
 import api from '../../services/api'
 
 export default function useThumbnail() {
-  const [thumbnailRecipe, setThumbnailrecipe] = useState({})
+  const [thumbnailIngredient, setThumbnailIngredient] = useState({})
 
   useEffect(() => {
-    const getThumbnailRecipe = async () => {
-      const response = await api.get('/recipes/2')
-      const thumbnailRecipeData = response.data
-      setThumbnailrecipe(thumbnailRecipeData)
+    const getThumbnailIngredient = async () => {
+      const response = await api.get('/ingredients/2')
+      const thumbnailIngredientData = response.data
+      setThumbnailIngredient(thumbnailIngredientData)
     }
-    getThumbnailRecipe()
+    getThumbnailIngredient()
   }, [])
 
   return {
-    thumbnailRecipePath: thumbnailRecipe.recipeImage?.src,
-    thumbnailRecipeDescription: thumbnailRecipe.recipeImage?.description,
-    thumbnailRecipeName: thumbnailRecipe.recipeName
+    thumbnailIngredientPath: thumbnailIngredient.ingredientImage?.src,
+    thumbnailIngredientDescription: thumbnailIngredient.ingredientImage?.description,
+    thumbnailIngredientName: thumbnailIngredient.ingredientName,
   }
 }
