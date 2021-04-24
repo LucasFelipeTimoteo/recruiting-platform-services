@@ -1,14 +1,14 @@
 const { Router } = require('express')
 
 const {
-  getRecipes,
-  getLogoRecipe
+  getIngredients,
+  getLogoIngredients
 } = require('../controller/recipesController')
 
 
 const router = Router()
 
-router.get('/', getRecipes)
-router.get('/:id', getLogoRecipe)
+router.get('/', getIngredients)
+router.get('/:id', getLogoIngredients)
 
 module.exports = router
