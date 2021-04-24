@@ -5,13 +5,13 @@ export default function useIngredients() {
   const [recipes, setRecipes] = useState([])
 
   useEffect(() => {
-    const getRecipes = async () => {
-      const response = await api.get('/recipes')
-      const recipesData = response.data
+    const getIngredients = async () => {
+      const response = await api.get('/ingredients')
+      const ingredientsData = response.data
 
-      setRecipes(recipesData)
+      setRecipes(ingredientsData)
     }
-    getRecipes()
+    getIngredients()
   }, [])
 
   return recipes
