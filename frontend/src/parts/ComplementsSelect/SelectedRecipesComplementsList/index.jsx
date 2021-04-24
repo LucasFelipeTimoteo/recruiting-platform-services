@@ -6,16 +6,18 @@ import RecipeThumbnail from '../../GLOBAL/RecipeThumbnail'
 
 import useComplementsListStyles from './styles'
 import useIngredientsChecklistContext from '../../../contexts/IngredientsChecklist/hooks/useIngredientsChecklistContext'
+import selectedRecipes from '../../../utils/GLOBAL/selectedRecipes'
 
 export default function SelectedRecipesComplementsList() {
   const { ingredientsChecklist } = useIngredientsChecklistContext()
-  const selectedRecipes = ingredientsChecklist.filter(recipe => recipe.checked)
+  const selectedRecipesList = selectedRecipes(ingredientsChecklist)
+  
   const styles = useComplementsListStyles()
 
   return (
     <>
       {
-        selectedRecipes.map(recipe => (
+        selectedRecipesList.map(recipe => (
           <ul className={styles.listWrapper}>
             <li className={styles.recipeAndComplementsListItem}>
               <div className={styles.recipeInfo}>
