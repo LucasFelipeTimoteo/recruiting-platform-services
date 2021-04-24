@@ -1,7 +1,7 @@
 import React from 'react'
 import useRecipeThumbnailStyles from './styles'
 
-export default function RecipesThumbnail({ recipe, small }) {
+export default function RecipeThumbnail({ recipe, small }) {
   const styles = useRecipeThumbnailStyles()
 
   return (
