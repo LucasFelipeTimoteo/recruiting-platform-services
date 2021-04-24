@@ -25,10 +25,17 @@ let MuiTheme = createMuiTheme({
 
   typography: {
     button: {
-      letterSpacing: 3
+      letterSpacing: 3,
+      fontFamily: 'Montserrat, Arial'
     },
     allVariants: {
-      fontFamily: 'Montserrat'
+      fontFamily: 'Montserrat, Arial'
+    },
+    h4: {
+      letterSpacing: 3
+    },
+    subtitle2: {
+      fontSize: 12
     }
   },
 
