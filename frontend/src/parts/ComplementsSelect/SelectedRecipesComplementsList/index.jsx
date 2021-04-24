@@ -1,5 +1,4 @@
 import React from 'react'
-import { Typography } from '@material-ui/core'
 
 import ComplementsList from '../ComplementsList'
 import RecipeThumbnail from '../../GLOBAL/RecipeThumbnail'
@@ -8,6 +7,7 @@ import useComplementsListStyles from './styles'
 import useIngredientsChecklistContext from '../../../contexts/IngredientsChecklist/hooks/useIngredientsChecklistContext'
 import selectedRecipes from '../../../utils/GLOBAL/selectedRecipes'
 import RecipeName from '../../GLOBAL/RecipeName'
+import RecipeTime from '../../GLOBAL/RecipeTime'
 
 export default function SelectedRecipesComplementsList() {
   const { ingredientsChecklist } = useIngredientsChecklistContext()
@@ -23,7 +23,9 @@ export default function SelectedRecipesComplementsList() {
             <li className={styles.recipeAndComplementsListItem}>
               <div className={styles.recipeInfo}>
                 <RecipeThumbnail recipe={recipe} />
+                
                 <RecipeName ingredient={recipe} />
+                <RecipeTime ingredient={recipe} />
               </div>
               <ComplementsList recipe={recipe} />
             </li>
