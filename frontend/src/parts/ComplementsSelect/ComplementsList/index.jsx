@@ -1,25 +1,23 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
-import useRecipesChecklist from '../../../hooks/recipesSelectHooks/useRecipesChecklist'
 
 import CheckboxImage from '../../GLOBAL/CheckboxImage'
 import RecipeThumbnail from '../../GLOBAL/RecipeThumbnail'
 import RecipeTime from '../../GLOBAL/RecipeTime'
 import ComplementsListItem from '../ComplementsListItem'
+
 import useComplementsListStyles from './styles'
 
 export default function ComplementsList({ recipe }) {
-  const { recipesChecklist, handleRecipeChecklist } = useRecipesChecklist(recipe.complements)
-
   const styles = useComplementsListStyles()
 
   return (
     <ul className={styles.complementsListWrapper}>
       {
-        recipesChecklist.map(complement => (
+        recipe.complements?.map(complement => (
           <ComplementsListItem
-            recipe={complement}
-            handleRecipeChecklist={handleRecipeChecklist}
+            complement={complement}
+            recipe={recipe}
           >
             <RecipeThumbnail small recipe={complement} />
             <div className={styles.complementInfoGroup}>
