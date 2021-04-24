@@ -1,9 +1,9 @@
 import React from 'react'
-import { Typography } from '@material-ui/core'
 
 import CheckboxImage from '../../GLOBAL/CheckboxImage'
 import RecipeThumbnail from '../../GLOBAL/RecipeThumbnail'
 import RecipeTime from '../../GLOBAL/RecipeTime'
+import RecipeName from '../../GLOBAL/RecipeName'
 import ComplementsListItem from '../ComplementsListItem'
 
 import useComplementsListStyles from './styles'
@@ -21,13 +21,8 @@ export default function ComplementsList({ recipe }) {
           >
             <RecipeThumbnail small recipe={complement} />
             <div className={styles.complementInfoGroup}>
-              <Typography
-                variant="body2"
-                className={styles.complementName}
-              >
-                {complement.name}
-              </Typography>
-              <RecipeTime recipe={complement} />
+              <RecipeName ingredient={complement} small /> 
+              <RecipeTime ingredient={complement} />
             </div>
 
             <CheckboxImage
