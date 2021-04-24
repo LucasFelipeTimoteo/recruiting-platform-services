@@ -3,7 +3,7 @@ import { Typography } from '@material-ui/core'
 
 import CheckboxImage from '../../parts/GLOBAL/CheckboxImage'
 import RecipeTime from '../../parts/GLOBAL/RecipeTime'
-import RecipesThumbnail from '../../parts/GLOBAL/RecipeThumbnail'
+import RecipeThumbnail from '../../parts/GLOBAL/RecipeThumbnail'
 import RecipeListItem from '../../parts/RecipesSelectParts/RecipeListItem'
 import ContinueButton from '../../parts/RecipesSelectParts/ContinueButton'
 
@@ -29,7 +29,7 @@ export default function RecipesSelect({
               key={recipe.id}
               recipe={recipe}
             >
-              <RecipesThumbnail recipe={recipe} />
+              <RecipeThumbnail recipe={recipe} />
               <div className={styles.recipeInfoGroup}>
                 <Typography variant="body1" className={styles.recipe}>
                   {recipe.name}
@@ -42,7 +42,10 @@ export default function RecipesSelect({
         }
       </ul>
 
-      <ContinueButton setComplementsPageStep={setComplementsPageStep} />
+      <ContinueButton
+       setComplementsPageStep={setComplementsPageStep}
+       ingredientsChecklist={ingredientsChecklist}
+       />
     </>
   )
 }
