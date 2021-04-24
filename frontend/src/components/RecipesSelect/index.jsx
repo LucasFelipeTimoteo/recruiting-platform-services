@@ -1,14 +1,13 @@
 import React from 'react'
 
 import CheckboxImage from '../../parts/GLOBAL/CheckboxImage'
-import RecipeTime from '../../parts/GLOBAL/RecipeTime'
 import RecipeThumbnail from '../../parts/GLOBAL/RecipeThumbnail'
 import RecipeListItem from '../../parts/RecipesSelectParts/RecipeListItem'
 import ContinueButton from '../../parts/RecipesSelectParts/ContinueButton'
 
 import useRecipesSelectStyles from './styles'
 import useIngredientsChecklistContext from '../../contexts/IngredientsChecklist/hooks/useIngredientsChecklistContext'
-import RecipeName from '../../parts/GLOBAL/RecipeName'
+import IngredientInfo from '../../parts/GLOBAL/IngredientInfo'
 
 export default function RecipesSelect({
   pageStep,
@@ -30,10 +29,7 @@ export default function RecipesSelect({
               recipe={recipe}
             >
               <RecipeThumbnail recipe={recipe} />
-              <div className={styles.recipeInfoGroup}>
-                <RecipeName ingredient={recipe} />
-                <RecipeTime ingredient={recipe} />
-              </div>
+              <IngredientInfo ingredient={recipe} />
               <CheckboxImage checked={recipe.checked} />
             </RecipeListItem>
           ))
