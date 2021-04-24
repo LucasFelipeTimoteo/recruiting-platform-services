@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import api from '../../services/api'
 
-export default function useRecipes() {
+export default function useIngredients() {
   const [recipes, setRecipes] = useState([])
 
   useEffect(() => {
