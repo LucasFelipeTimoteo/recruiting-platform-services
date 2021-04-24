@@ -80,6 +80,7 @@
 - apenas movi algumas subpastas do 'utils' e do 'parts' e modifiquei pequenas coisas, pois percebi que seriam reutilizadas em outras páginas. Depois tive que me focar em outros trabalhos.
 
 # 20/04/2021
+## Frontend
 - Criação do componente de selecão das receitas
 
 - Criação do componente de complementos
@@ -93,3 +94,23 @@
 
 - também reparei que alguns componentes não foram componentizados e que poderiam ser de maneira global para o reuso na lista de recipes e de complements
   - deixarei essa refatoração para um outro momento
+
+# 23/04/2021
+## Frontend
+- Finalização da lógica envolvendo a seleção dos complementos
+  - inicialmente, tentei uma abordagem diferente do tradicional, optei por testar um fluxo de dados guiado pelo localStorage ao invés do estado
+    - a abordagem funcionou, mas percebi que ela é inferior à abordagem de estado e que isso poderia abrir brechas de segurança e performance caso fosse uma aplicação real
+      - por este motivo, refiz toda a lógica do fluxo de dados 
+
+- optimização geral das funções 
+
+- Dei um rename em diversas pastas, arquivos, funções e variáveis para manter a consistencia e compreensão do código
+
+- Movi algumas pastas de lugar 
+
+## Backend
+- Mudei o nome da rota "recipes" para "ingredients" para manter a consistência dos nomes
+
+- Mudei o nome antigo das rotas de recipes para ingredients
+
+- Mudei o nome dos controllers de recipes para ingredients
