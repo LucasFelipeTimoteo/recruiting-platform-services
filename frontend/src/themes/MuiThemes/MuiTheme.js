@@ -29,7 +29,8 @@ let MuiTheme = createMuiTheme({
       fontFamily: 'Montserrat, Arial'
     },
     allVariants: {
-      fontFamily: 'Montserrat, Arial'
+      fontFamily: 'Montserrat, Arial',
+      letterSpacing: 1
     },
     h4: {
       letterSpacing: 3
