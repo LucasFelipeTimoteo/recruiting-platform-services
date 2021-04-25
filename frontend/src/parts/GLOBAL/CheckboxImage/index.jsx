@@ -9,6 +9,8 @@ export default function CheckboxImage({ checked, small }) {
     <img
       src={`${process.env.PUBLIC_URL}images/${src}`}
       alt="test"
+      width="30px"
+      height="30px"
       className={`
         ${styles.checkbox}
         ${small && styles.smallCheckbox}
