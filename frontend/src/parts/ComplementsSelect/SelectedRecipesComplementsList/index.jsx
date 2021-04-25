@@ -18,7 +18,7 @@ export default function SelectedRecipesComplementsList() {
     <>
       {
         selectedRecipesList.map(recipe => (
-          <ul className={styles.listWrapper}>
+          <ul key={recipe.id} className={styles.listWrapper}>
             <li className={styles.recipeAndComplementsListItem}>
               <div className={styles.recipeInfo}>
                 <RecipeThumbnail recipe={recipe} />
