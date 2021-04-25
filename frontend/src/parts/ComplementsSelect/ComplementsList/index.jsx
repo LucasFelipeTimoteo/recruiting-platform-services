@@ -16,6 +16,7 @@ export default function ComplementsList({ recipe }) {
       {
         recipe.complements?.map(complement => (
           <ComplementsListItem
+            key={complement.id}
             complement={complement}
             recipe={recipe}
           >
