@@ -4,7 +4,8 @@ const useFullnameStyles = makeStyles({
   label: {
     margin: 10,
     color: 'gray',
-    fontSize: '.9rem'
+    fontWeight: 500,
+    fontSize: '1rem'
   }
 })
 
