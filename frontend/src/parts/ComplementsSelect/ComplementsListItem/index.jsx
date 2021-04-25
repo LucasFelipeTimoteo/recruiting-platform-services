@@ -2,18 +2,18 @@ import React from 'react'
 import useIngredientsChecklistContext from '../../../contexts/IngredientsChecklist/hooks/useIngredientsChecklistContext'
 import useComplemetsListItem from './style'
 
-export default function ComplementsListItem({ 
+export default function ComplementsListItem({
   children,
   complement,
   recipe
- }) {
+}) {
   const { handleComplementsChecklist } = useIngredientsChecklistContext()
   const styles = useComplemetsListItem()
 
   return (
-    <li 
-    className={styles.listItem}
-    onClick={() => { handleComplementsChecklist(complement, recipe) }}
+    <li
+      className={styles.listItem}
+      onClick={() => { handleComplementsChecklist(complement, recipe) }}
     >
       {children}
     </li>
