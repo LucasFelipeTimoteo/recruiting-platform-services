@@ -9,7 +9,6 @@ export default function ContinueButton({ setComplementsPageStep, ingredientsChec
   const selectedRecipesList = selectedRecipes(ingredientsChecklist)
   const nextPageCondition = shouldGoToNextPage(selectedRecipesList)
 
-
   return (
     <Button
       color="primary"
