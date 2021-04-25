@@ -5,7 +5,6 @@ import ActionsButtonsStyles from '../../parts/ComplementsSelect/ActionsButtons'
 import SelectedRecipesComplementsList from '../../parts/ComplementsSelect/SelectedRecipesComplementsList'
 import useComplementsSelectStyles from './styles'
 
-
 export default function ComplementsSelect({
   pageStep,
   setRecipesPageStep
