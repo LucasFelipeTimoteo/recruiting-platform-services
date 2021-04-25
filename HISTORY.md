@@ -114,3 +114,11 @@
 - Mudei o nome antigo das rotas de recipes para ingredients
 
 - Mudei o nome dos controllers de recipes para ingredients
+
+# 24/04/2021
+## Frontend
+- optimização e componentização geral nos componentes
+
+## Backend
+- criação de uma nova rota para salvar os usuários
+  
