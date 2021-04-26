@@ -1,22 +1,22 @@
 import React from 'react'
-import useThumbnail from '../../../hooks/thubmbnail/useThumbnail'
+import useLogo from '../../../hooks/logo/useLogo'
 import useIngredientLogoStyles from './styles'
 
 export default function IngredientLogo({ big }) {
   const {
-    thumbnailIngredientDescription,
-    thumbnailIngredientPath,
-    thumbnailIngredientName,
-  } = useThumbnail()
+    logoIngredientPath,
+    logoIngredientDescription,
+    logoIngredientName
+  } = useLogo()
 
   const styles = useIngredientLogoStyles(big)
 
   return (
     <>
       <img
-        src={`${process.env.PUBLIC_URL}${thumbnailIngredientPath}`}
-        alt={thumbnailIngredientDescription}
-        title={thumbnailIngredientName}
+        src={`${process.env.PUBLIC_URL}${logoIngredientPath}`}
+        alt={logoIngredientDescription}
+        title={logoIngredientName}
         className={
           `${ big ? styles.bigLogo : styles.logo }`
         }
