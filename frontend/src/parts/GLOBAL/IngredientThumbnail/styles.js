@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 
 const useIngredientThumbnailStyles = makeStyles(theme => ({
-  IngredientThumbnail: {
+  ingredientThumbnail: {
     height: 63,
     width: 63,
     margin: '0 10px 0 40px ',
