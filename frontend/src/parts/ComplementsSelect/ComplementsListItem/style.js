@@ -1,19 +1,12 @@
 import { makeStyles } from "@material-ui/core";
 
-const useComplemetsListItem = makeStyles(theme => ({
+const useComplemetsListItem = makeStyles({
   listItem: {
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'center',
-
-    width: '100%',
-    padding:  0,
-    marginLeft: 50,
-
-    [theme.breakpoints.down(theme.breakpoints.values.sm)]: {
-      width: '96vw'
-    }
+    padding:  '2px 0 0 40px',
   }
-}))
+})
 
 export default useComplemetsListItem
