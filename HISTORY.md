@@ -121,4 +121,16 @@
 
 ## Backend
 - criação de uma nova rota para salvar os usuários
-  
+
+# 25/04/2021
+## Frontend
+- No dia de hoje, embora tenha tido pouco tempo, realizei optimizações gerais
+  - utilizei o LightHouse para analisar minha aplicação e aplicar o rank, e com base no rank, optimizei 
+  - nomes de classes foram auteradas para garantir maior indentificação com o componente estilizado
+  - componentes e pastas tiveram nomes alterados 
+
+- A estutura css e html foi auterada
+  - a abordagem anterior para criar as bordas cinzas de baixo tornavam a legibilidade relativamente mais difícil, além de gerar alguns bugs em proporções mobile
+    - isso me levou à decisão de auterar isso e optar por uma abordagem menos bonita, porém, mais eficiente, que foi a abordagem de usar uma passing no próprio componente app.js
+
+- estou cansado e preciso acordar cedo amanhã, então deixarei para commitar amanhã minhas mudanças de hoje
