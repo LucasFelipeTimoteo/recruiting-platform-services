@@ -1,17 +1,17 @@
 import React from 'react'
 import useIngredientThumbnailStyles from './styles'
 
-export default function IngredientThumbnail({ recipe, small }) {
+export default function IngredientThumbnail({ ingredient, small }) {
   const styles = useIngredientThumbnailStyles()
 
   return (
     <>
       <img
-        src={`${process.env.PUBLIC_URL}${recipe.image.src}`}
-        alt={recipe.description}
-        title={recipe.name}
+        src={`${process.env.PUBLIC_URL}${ingredient.image.src}`}
+        alt={ingredient.description}
+        title={ingredient.name}
         className={
-          `${styles.IngredientThumbnail}
+          `${styles.ingredientThumbnail}
            ${small && styles.smallIngredientThumbnail}`
         }
       />
