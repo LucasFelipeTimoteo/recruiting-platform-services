@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 const useCheckboxStyles = makeStyles({
   checkbox: {
-    marginLeft: 'auto',
+    margin: '0 15px 0 auto',
     userSelect: 'none'
   },
 
