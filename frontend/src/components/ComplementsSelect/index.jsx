@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
 
-import ActionsButtonsStyles from '../../parts/ComplementsSelect/ActionsButtons'
+import ComplementsSelectButtons from '../../parts/ComplementsSelect/ComplementsSelectButtons'
 import SelectedRecipesComplementsList from '../../parts/ComplementsSelect/SelectedRecipesComplementsList'
 import useComplementsSelectStyles from './styles'
 
@@ -17,13 +17,13 @@ export default function ComplementsSelect({
   return (
     <>
       <Typography
-        variant="subtitle1"
+        variant="body2"
         className={styles.listTitle}
       >
         Adicione complementos ao seu pedido
       </Typography>
       <SelectedRecipesComplementsList />
-      <ActionsButtonsStyles
+      <ComplementsSelectButtons
         setRecipesPageStep={setRecipesPageStep}
       />
     </>
