@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 
-const useRecipeTimeStyles = makeStyles({
+const useIngredientTimeStyles = makeStyles({
   timeWrapper: {
     display: 'flex',
     alignItems: 'center'
@@ -12,4 +12,4 @@ const useRecipeTimeStyles = makeStyles({
   }
 })
 
-export default useRecipeTimeStyles
+export default useIngredientTimeStyles
