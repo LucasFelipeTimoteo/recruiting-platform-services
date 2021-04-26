@@ -1,7 +1,7 @@
 import React from 'react'
 
 import ComplementsList from '../ComplementsList'
-import RecipeThumbnail from '../../GLOBAL/RecipeThumbnail'
+import IngredientThumbnail from '../../GLOBAL/IngredientThumbnail'
 
 import useComplementsListStyles from './styles'
 import useIngredientsChecklistContext from '../../../contexts/IngredientsChecklist/hooks/useIngredientsChecklistContext'
@@ -15,13 +15,16 @@ export default function SelectedRecipesComplementsList() {
   const styles = useComplementsListStyles()
 
   return (
-    <>
+    <div className={styles.selectedRecipesComplementsListWrapper}>
       {
         selectedRecipesList.map(recipe => (
-          <ul key={recipe.id} className={styles.listWrapper}>
-            <li className={styles.recipeAndComplementsListItem}>
-              <div className={styles.recipeInfo}>
-                <RecipeThumbnail recipe={recipe} />
+          <ul
+            key={recipe.id}
+            className={styles.selectedRecipesComplementsList}
+          >
+            <li className={styles.selectedRecipesComplementsListItem}>
+              <div className={styles.selectedRecipeInfo}>
+                <IngredientThumbnail recipe={recipe} />
                 <IngredientInfo ingredient={recipe} />
               </div>
               <ComplementsList recipe={recipe} />
@@ -29,6 +32,6 @@ export default function SelectedRecipesComplementsList() {
           </ul>
         ))
       }
-    </>
+    </div>
   )
 }
