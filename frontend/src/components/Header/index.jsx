@@ -4,7 +4,7 @@ import Subtitle from '../../parts/HeaderParts/Subtitle'
 import Title from '../../parts/HeaderParts/Title'
 
 import useHeaderStyles from './styles'
-import RecipeLogo from '../../parts/GLOBAL/RecipeLogo'
+import IngredientLogo from '../../parts/GLOBAL/IngredientLogo'
 
 
 export default function Header() {
@@ -12,12 +12,10 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.headerContent}>
-        <RecipeLogo />
-        <div className={styles.titleAndSubtitleGroup}>
-          <Title />
-          <Subtitle />
-        </div>
+      <IngredientLogo />
+      <div className={styles.titleAndSubtitleGroup}>
+        <Title />
+        <Subtitle />
       </div>
     </header>
   )
