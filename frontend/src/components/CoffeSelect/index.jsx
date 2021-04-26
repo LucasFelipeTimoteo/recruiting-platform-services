@@ -2,6 +2,7 @@ import React from 'react'
 import RecipesSelect from '../RecipesSelect'
 import ComplementsSelect from '../ComplementsSelect'
 import useCoffeesPageStep from '../../hooks/coffeesPageStep/useCoffeesPageStep'
+import useCoffeeSelectStyles from './styles'
 
 export default function CoffeeSelect() {
   const {
@@ -10,8 +11,10 @@ export default function CoffeeSelect() {
     setComplementsPageStep
   } = useCoffeesPageStep()
 
+  const styles = useCoffeeSelectStyles()
+
   return (
-    <>
+    <div className={styles.coffeeSelectWrapper}>
       <RecipesSelect
         pageStep={pageStep}
         setComplementsPageStep={setComplementsPageStep}
@@ -21,6 +24,6 @@ export default function CoffeeSelect() {
         pageStep={pageStep}
         setRecipesPageStep={setRecipesPageStep}
       />
-    </>
+    </div>
   )
 }
