@@ -1,27 +1,27 @@
 import { makeStyles } from "@material-ui/core";
 
-const useComplementsListStyles = makeStyles(theme => ({
-  listWrapper: {
-    padding: 0,
-    margin: 0
+const useComplementsListStyles = makeStyles({
+  selectedRecipesComplementsListWrapper: {
+    width: '100%'
   },
 
-  recipeInfo: {
+  selectedRecipesComplementsList: {
+    padding: 0,
+    margin: '0 0 15px 0',
+
+    "&:not(:last-child)": {
+      borderBottom: '2px solid lightGray'
+    }
+  },
+
+  selectedRecipesComplementsListItem: {
+    listStyle: 'none',
+  },
+
+  selectedRecipeInfo: {
     display: 'flex',
     alignItems: 'center'
-  },
-
-  recipeAndComplementsListItem: {
-    listStyle: 'none',
-    boxSizing:'border-box',
-    width: '90vw',
-    border: '10px solid transparent',
-    borderBottom: '2px solid lightgray',
-
-    [theme.breakpoints.down(theme.breakpoints.values.sm)]: {
-      width: '96vw'
-    }
   }
-}))
+})
 
 export default useComplementsListStyles
