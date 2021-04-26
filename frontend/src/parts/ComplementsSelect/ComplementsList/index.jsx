@@ -1,9 +1,9 @@
 import React from 'react'
 
 import CheckboxImage from '../../GLOBAL/CheckboxImage'
-import RecipeThumbnail from '../../GLOBAL/RecipeThumbnail'
-import RecipeTime from '../../GLOBAL/RecipeTime'
-import RecipeName from '../../GLOBAL/RecipeName'
+import IngredientThumbnail from '../../GLOBAL/IngredientThumbnail'
+import IngredientTime from '../../GLOBAL/IngredientTime'
+import IngredientName from '../../GLOBAL/IngredientName'
 import ComplementsListItem from '../ComplementsListItem'
 
 import useComplementsListStyles from './styles'
@@ -20,10 +20,10 @@ export default function ComplementsList({ recipe }) {
             complement={complement}
             recipe={recipe}
           >
-            <RecipeThumbnail small recipe={complement} />
+            <IngredientThumbnail small ingredient={complement} />
             <div className={styles.complementInfoGroup}>
-              <RecipeName ingredient={complement} small /> 
-              <RecipeTime ingredient={complement} />
+              <IngredientName ingredient={complement} small /> 
+              <IngredientTime ingredient={complement} />
             </div>
 
             <CheckboxImage
