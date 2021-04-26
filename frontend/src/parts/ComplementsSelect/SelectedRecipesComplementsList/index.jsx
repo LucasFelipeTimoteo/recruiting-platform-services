@@ -24,7 +24,7 @@ export default function SelectedRecipesComplementsList() {
           >
             <li className={styles.selectedRecipesComplementsListItem}>
               <div className={styles.selectedRecipeInfo}>
-                <IngredientThumbnail recipe={recipe} />
+                <IngredientThumbnail ingredient={recipe} />
                 <IngredientInfo ingredient={recipe} />
               </div>
               <ComplementsList recipe={recipe} />
