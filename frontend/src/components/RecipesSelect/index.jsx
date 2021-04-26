@@ -1,7 +1,7 @@
 import React from 'react'
 
 import CheckboxImage from '../../parts/GLOBAL/CheckboxImage'
-import RecipeThumbnail from '../../parts/GLOBAL/RecipeThumbnail'
+import IngredientThumbnail from '../../parts/GLOBAL/IngredientThumbnail'
 import RecipeListItem from '../../parts/RecipesSelectParts/RecipeListItem'
 import ContinueButton from '../../parts/RecipesSelectParts/ContinueButton'
 
@@ -20,15 +20,15 @@ export default function RecipesSelect({
     return null
   }
   return (
-    <>
-      <ul className={styles.ListWrapper}>
+    <div className={styles.listComponentsWrapper}>
+      <ul className={styles.list}>
         {
           ingredientsChecklist.map(recipe => (
             <RecipeListItem
               key={recipe.id}
               recipe={recipe}
             >
-              <RecipeThumbnail recipe={recipe} />
+              <IngredientThumbnail ingredient={recipe} />
               <IngredientInfo ingredient={recipe} />
               <CheckboxImage checked={recipe.checked} />
             </RecipeListItem>
@@ -40,6 +40,6 @@ export default function RecipesSelect({
         setComplementsPageStep={setComplementsPageStep}
         ingredientsChecklist={ingredientsChecklist}
       />
-    </>
+    </div>
   )
 }
