@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 
-const useListItemStyles = makeStyles({
+const useRecipeListItemStyles = makeStyles({
   recipeListItem: {
     display: 'flex',
     justifyContent: 'flex-start',
@@ -12,4 +12,4 @@ const useListItemStyles = makeStyles({
   }
 })
 
-export default useListItemStyles
+export default useRecipeListItemStyles
