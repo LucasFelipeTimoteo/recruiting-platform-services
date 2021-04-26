@@ -1,6 +1,6 @@
 import React from 'react'
-import RecipeName from '../RecipeName'
-import RecipeTime from '../RecipeTime'
+import IngredientName from '../IngredientName'
+import IngredientTime from '../IngredientTime'
 import useIngredientsInfoStyles from './styles'
 
 export default function IngredientInfo({ ingredient }) {
@@ -8,8 +8,8 @@ export default function IngredientInfo({ ingredient }) {
 
   return (
     <div className={styles.IngredientInfoGroup}>
-      <RecipeName ingredient={ingredient} />
-      <RecipeTime ingredient={ingredient} />
+      <IngredientName ingredient={ingredient} />
+      <IngredientTime ingredient={ingredient} />
     </div>
   )
 }
