@@ -1,15 +1,15 @@
 import React from 'react'
 import useThumbnail from '../../../hooks/thubmbnail/useThumbnail'
-import useRecipeLogoStyles from './styles'
+import useIngredientLogoStyles from './styles'
 
-export default function RecipeLogo({ big }) {
+export default function IngredientLogo({ big }) {
   const {
     thumbnailIngredientDescription,
     thumbnailIngredientPath,
     thumbnailIngredientName,
   } = useThumbnail()
 
-  const styles = useRecipeLogoStyles(big)
+  const styles = useIngredientLogoStyles(big)
 
   return (
     <>
