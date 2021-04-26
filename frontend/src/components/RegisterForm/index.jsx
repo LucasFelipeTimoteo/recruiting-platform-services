@@ -8,7 +8,7 @@ import FullName from '../../parts/FormParts/FullName'
 import RegisterButton from '../../parts/FormParts/RegisterButton'
 
 import useRegisterFormStyles from './styles'
-import RecipeLogo from '../../parts/GLOBAL/RecipeLogo'
+import IngredientLogo from '../../parts/GLOBAL/IngredientLogo'
 
 export default function RegisterForm() {
   const { fullName, handleFullName } = useFullname()
@@ -18,7 +18,7 @@ export default function RegisterForm() {
 
   return (
     <form className={styles.form} >
-      <RecipeLogo big />
+      <IngredientLogo big />
       <div className={styles.inputsWrapper}>
         <FullName
           fullName={fullName}
