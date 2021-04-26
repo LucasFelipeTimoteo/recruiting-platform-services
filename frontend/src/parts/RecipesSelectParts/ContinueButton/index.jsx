@@ -4,18 +4,22 @@ import selectedRecipes from '../../../utils/GLOBAL/selectedRecipes'
 import shouldGoToNextPage from '../../../utils/RecipesSelect/shouldGoToNextPage'
 import useContinueButtonStyles from './styles'
 
-export default function ContinueButton({ setComplementsPageStep, ingredientsChecklist }) {
-  const styles = useContinueButtonStyles()
+export default function ContinueButton({
+  setComplementsPageStep,
+  ingredientsChecklist
+}) {
   const selectedRecipesList = selectedRecipes(ingredientsChecklist)
   const nextPageCondition = shouldGoToNextPage(selectedRecipesList)
+
+  const styles = useContinueButtonStyles()
 
   return (
     <Button
       color="primary"
       variant="contained"
       size="large"
-      disableElevation={true}
-      className={styles.button}
+      disableElevation
+      className={styles.recipesSelectButton}
       onClick={nextPageCondition ? setComplementsPageStep : null}
     >
       Continuar
