@@ -2,9 +2,8 @@ import { makeStyles } from "@material-ui/core";
 
 const useComplementsListStyles = makeStyles({
   complementsListWrapper: {
-    width: '87%',
     padding: 0,
-    margin: '12px 20px'
+    margin: '12px 25px'
   },
 
   complementInfoGroup: {
