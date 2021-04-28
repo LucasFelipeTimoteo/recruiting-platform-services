@@ -101,7 +101,7 @@
             "src": "images/cookie.svg",
             "description": "A cookie"
           },
-          "time": 20
+          "time": 130
         },
         {
           "id": 3,
@@ -148,7 +148,7 @@
             "src": "images/cookie.svg",
             "description": "A cookie"
           },
-          "time": 55
+          "time": 130
         }
       ]
     },
