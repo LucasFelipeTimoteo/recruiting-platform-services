@@ -33,6 +33,7 @@ export default function ComplementsSelect({
       />
       <ComplementsSelectButtons
         setRecipesPageStep={setRecipesPageStep}
+        selectedRecipesList={selectedRecipesList}
       />
     </>
   )
