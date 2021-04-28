@@ -4,13 +4,10 @@ import ComplementsList from '../ComplementsList'
 import IngredientThumbnail from '../../GLOBAL/IngredientThumbnail'
 
 import useComplementsListStyles from './styles'
-import useIngredientsChecklistContext from '../../../contexts/IngredientsChecklist/hooks/useIngredientsChecklistContext'
-import selectedRecipes from '../../../utils/GLOBAL/selectedRecipes'
 import IngredientInfo from '../../../parts/GLOBAL/IngredientInfo'
 
-export default function SelectedRecipesComplementsList() {
-  const { ingredientsChecklist } = useIngredientsChecklistContext()
-  const selectedRecipesList = selectedRecipes(ingredientsChecklist)
+export default function SelectedRecipesComplementsList({ selectedRecipesList }) {
+
 
   const styles = useComplementsListStyles()
 
