@@ -9,25 +9,25 @@ const totalIngredientsTimeInMinutes = (ingredientsTimes) => {
     return recipeTimeminutes
   })
 
-  const ingredientsTimesSecounds = ingredientsTimes.map(recipeTime => {
-    const parsedNumberToSecoundsString = parseNumberToMinutes(recipeTime)
-    const recipeTimeSplited = parsedNumberToSecoundsString.split(':')
-    const recipeTimeSecounds = Number(recipeTimeSplited[1])
+  const ingredientsTimesSeconds = ingredientsTimes.map(recipeTime => {
+    const parsedNumberToSecondsString = parseNumberToMinutes(recipeTime)
+    const recipeTimeSplited = parsedNumberToSecondsString.split(':')
+    const recipeTimeSeconds = Number(recipeTimeSplited[1])
 
-    return recipeTimeSecounds
+    return recipeTimeSeconds
   })
 
   const totalIngredientsTimeMinutes = ingredientsTimesMinutes.reduce(
-    (total, secounds) => total + secounds, 0
+    (total, seconds) => total + seconds, 0
   )
-  const totalIngredientsTimeMinutesInSecounds = totalIngredientsTimeMinutes * 60
+  const totalIngredientsTimeMinutesInSeconds = totalIngredientsTimeMinutes * 60
   
-  const totalIngredientsTimeSecounds = ingredientsTimesSecounds.reduce(
-    (total, secounds) => total + secounds, 0
+  const totalIngredientsTimeSeconds = ingredientsTimesSeconds.reduce(
+    (total, seconds) => total + seconds, 0
   )
 
-  const totalOrderTimeInSecounds = totalIngredientsTimeMinutesInSecounds + totalIngredientsTimeSecounds
-  const totalOrderTimeInminutes = totalOrderTimeInSecounds
+  const totalOrderTimeInSeconds = totalIngredientsTimeMinutesInSeconds + totalIngredientsTimeSeconds
+  const totalOrderTimeInminutes = totalOrderTimeInSeconds
 
   return totalOrderTimeInminutes
 }
