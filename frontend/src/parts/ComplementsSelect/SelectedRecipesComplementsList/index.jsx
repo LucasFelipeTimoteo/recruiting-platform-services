@@ -7,8 +7,6 @@ import useComplementsListStyles from './styles'
 import IngredientInfo from '../../../parts/GLOBAL/IngredientInfo'
 
 export default function SelectedRecipesComplementsList({ selectedRecipesList }) {
-
-
   const styles = useComplementsListStyles()
 
   return (
