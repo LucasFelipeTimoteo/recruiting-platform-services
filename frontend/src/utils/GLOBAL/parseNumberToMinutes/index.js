@@ -1,11 +1,15 @@
-import oneDigitNumberToMinute from "./complements/oneDigitNumberToMinute"
-import threeOrMoreDigitsNumberToMinute from "./complements/threeOrMoreDigitsNumberToMinute"
-import twoDigitsNumberToMinute from "./complements/twoDigitsNumberToMinute"
+import oneDigitNumberToMinute from "./utils/oneDigitNumberToMinute"
+import threeOrMoreDigitsNumberToMinute from "./utils/threeOrMoreDigitsNumberToMinute"
+import twoDigitsNumberToMinute from "./utils/twoDigitsNumberToMinute"
 
-const parseNumberToMinutes = (number) => {
+const parseNumberToMinutes = (number, isMinuteInteger) => {
   let parsedNumber = null
 
   const stringNumber = number.toString()
+
+  if(isMinuteInteger) {
+    return `${stringNumber}:00`
+  }
 
   if (stringNumber.length === 1) {
     parsedNumber = oneDigitNumberToMinute(stringNumber)
