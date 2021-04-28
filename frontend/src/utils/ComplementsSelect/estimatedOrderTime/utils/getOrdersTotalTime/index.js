@@ -7,8 +7,8 @@ const getOrdersTotalTime = (recipesTimes, complementsTimes) => {
   const recipesTotalTime = getRecipesTotalTime(recipesTimes)
   const complementsTotalTime = getComplementsTotalTime(complementsTimes)
   
-  const allIngredientsTimesSecoundsList = [recipesTotalTime, complementsTotalTime]
-  const ingredientsTotalTime = getIngredientsTotalTime(allIngredientsTimesSecoundsList)
+  const allIngredientsTimesSecondsList = [recipesTotalTime, complementsTotalTime]
+  const ingredientsTotalTime = getIngredientsTotalTime(allIngredientsTimesSecondsList)
 
   const isMinuteInteger = Number.isInteger(ingredientsTotalTime)
   const parsedIngredientsTotalTime = parseNumberToMinutes(ingredientsTotalTime, isMinuteInteger)
