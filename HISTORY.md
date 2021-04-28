@@ -134,3 +134,16 @@
     - isso me levou à decisão de auterar isso e optar por uma abordagem menos bonita, porém, mais eficiente, que foi a abordagem de usar uma passing no próprio componente app.js
 
 - estou cansado e preciso acordar cedo amanhã, então deixarei para commitar amanhã minhas mudanças de hoje
+
+# 27/04/2021
+## Frontend
+- No dia de hoje, criei a lógica para calcular o tempo total dos pedidos feitos pelo cliente
+  - de inicio, achei que seria algo bem simples, mas percebi depois que seria algo um pouco mais complexo pelas diversas conversões e tratamento que os dados deveriam receber
+  - para facilitar o desenvolvimento, dividi ele em duas etapas:
+    - etapa onde foram criadas as funções de cálculo, mas a única coisa que faziam era somar os números puros
+    - etapa onde foi adicionada a lógica de conversão de e cálculo dos dados dentro das funções criadas
+  - a lógica da conversão se resume em:
+    - converter o número para o formato desejado
+    - separar esse número convertido em 2 partes, os minutos e os segundos (caso haja duas partes)
+      - se tiver apenas uma, o número já pode ser retornado 
+    - tratar adequadamente as partes e concatenar tudo no final
