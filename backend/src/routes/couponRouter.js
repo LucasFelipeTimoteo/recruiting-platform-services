@@ -1,8 +1,8 @@
 const { Router } = require('express')
-const { gerCoupon } = require('../controller/couponController')
+const { getCoupon } = require('../controller/couponController')
 
 const router = Router()
 
-router.get('/', gerCoupon)
+router.get('/', getCoupon)
 
 module.exports = router
