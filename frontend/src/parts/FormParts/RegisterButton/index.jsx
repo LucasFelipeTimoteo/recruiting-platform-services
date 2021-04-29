@@ -14,7 +14,7 @@ export default function RegisterButton({ fullName, email }) {
         variant="contained"
         size="large"
         disableElevation={true}
-        className={styles.button}
+        className={styles.registerButton}
         onClick={(event) => handleSubmit(fullName, email, event)}
       >
         cadastrar
