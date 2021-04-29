@@ -147,3 +147,16 @@
     - separar esse número convertido em 2 partes, os minutos e os segundos (caso haja duas partes)
       - se tiver apenas uma, o número já pode ser retornado 
     - tratar adequadamente as partes e concatenar tudo no final
+
+# 28/04/2021
+## Backend
+- Atualização do tempo de preparo dos cookies
+  - de 20 para 130
+
+- Criação da rota responsável por obter o cupon 
+
+- Criação da página de espera após a finalização do pedido
+
+## Planejamento
+- Planejamento do Timer
+  - estou pensando sobre o que farei no timer, pois, para criar a animação, terei que manipular SVGs, e eu não sei como fazer isso. Até posso tirar um tempo para estudar, mas isso certamente tomaria muito tempo e prolongaria a data de entrega do projeto. Vou pensar melhor sobre isso depois
