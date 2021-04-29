@@ -1,32 +1,24 @@
-import parseNumberToMinutes from '../../../../../../GLOBAL/parseNumberToMinutes'
+import getIngredientsTimesMinutes from './utils/getIngredientsTimesMinutes'
+import getIngredientsTimesSeconds from './utils/getIngredientsTimesSeconds'
+import getTotalIngredientsTimeMinutesInSeconds from './utils/getTotalIngredientsTimeMinutesInSeconds'
+import getTotalIngredientsTimeSeconds from './utils/getTotalIngredientsTimeSeconds'
 
 const totalIngredientsTimeInMinutes = (ingredientsTimes) => {
-  const ingredientsTimesMinutes = ingredientsTimes.map(recipeTime => {
-    const parsedNumberToMinutesString = parseNumberToMinutes(recipeTime)
-    const recipeTimeSplited = parsedNumberToMinutesString.split(':')
-    const recipeTimeminutes = Number(recipeTimeSplited[0])
+  const ingredientsTimesMinutes = getIngredientsTimesMinutes(ingredientsTimes)
+  const ingredientsTimesSeconds = getIngredientsTimesSeconds(ingredientsTimes)
 
-    return recipeTimeminutes
-  })
-
-  const ingredientsTimesSeconds = ingredientsTimes.map(recipeTime => {
-    const parsedNumberToSecondsString = parseNumberToMinutes(recipeTime)
-    const recipeTimeSplited = parsedNumberToSecondsString.split(':')
-    const recipeTimeSeconds = Number(recipeTimeSplited[1])
-
-    return recipeTimeSeconds
-  })
-
-  const totalIngredientsTimeMinutes = ingredientsTimesMinutes.reduce(
-    (total, seconds) => total + seconds, 0
-  )
-  const totalIngredientsTimeMinutesInSeconds = totalIngredientsTimeMinutes * 60
-  
-  const totalIngredientsTimeSeconds = ingredientsTimesSeconds.reduce(
-    (total, seconds) => total + seconds, 0
+  const totalIngredientsTimeMinutesInSeconds = (
+    getTotalIngredientsTimeMinutesInSeconds(ingredientsTimesMinutes)
   )
 
-  const totalOrderTimeInSeconds = totalIngredientsTimeMinutesInSeconds + totalIngredientsTimeSeconds
+  const totalIngredientsTimeSeconds = (
+    getTotalIngredientsTimeSeconds(ingredientsTimesSeconds)
+  )
+
+  const totalOrderTimeInSeconds = (
+    totalIngredientsTimeMinutesInSeconds + totalIngredientsTimeSeconds
+  )
+
   const totalOrderTimeInminutes = totalOrderTimeInSeconds
 
   return totalOrderTimeInminutes
