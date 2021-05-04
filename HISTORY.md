@@ -160,3 +160,13 @@
 ## Planejamento
 - Planejamento do Timer
   - estou pensando sobre o que farei no timer, pois, para criar a animação, terei que manipular SVGs, e eu não sei como fazer isso. Até posso tirar um tempo para estudar, mas isso certamente tomaria muito tempo e prolongaria a data de entrega do projeto. Vou pensar melhor sobre isso depois
+
+
+# 03/05/2021
+## Frontend
+- Optimização do código
+  - refatoração e divisão das funções utilitarias
+
+- Criação de testes unitários e de integração para as funções utilitárias
+
+- Cobri a maior parte das funções utilitárias com testes, Amanha terminarei as restantes e aplicarei testes nos hooks
