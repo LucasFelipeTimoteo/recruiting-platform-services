@@ -1,24 +1,13 @@
 import { useEffect, useState } from 'react'
 import toggleRecipesChecklist from '../../../../utils/RecipesSelect/toggleRecipesChecklist'
 import toggleComplementsChecklist from '../../../../utils/ComplementsSelect/toggleComplementsChecklist'
+import createChecklist from './utils/createChecklist'
 
 export default function useIngredientsChecklist(ingredients) {
   const [ingredientsChecklist, setIngredientsChecklist] = useState([])
 
   useEffect(() => {
-    const checklist = ingredients?.map(recipe => {
-      const newRecipeChecklistItem = { ...recipe, checked: false }
-      const complementsChecklist = newRecipeChecklistItem.complements?.map(complement => (
-        { ...complement, checked: false }
-      ))
-
-      const newChecklist = {
-        ...newRecipeChecklistItem,
-        complements: complementsChecklist
-      }
-
-      return newChecklist
-    })
+    const checklist = createChecklist(ingredients)
 
     setIngredientsChecklist(checklist)
   }, [ingredients])
