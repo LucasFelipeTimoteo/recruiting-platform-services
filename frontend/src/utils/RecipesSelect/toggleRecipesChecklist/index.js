@@ -1,7 +1,7 @@
 import alreadyChecked from "./utils/alreadyChecked"
 import limitNotReached from "./utils/limitNotReached"
 import notSelected from "./utils/notSelected"
-import checkingButLimitReached from "./utils/checkButLimitReached"
+import checkButLimitReached from "./utils/checkButLimitReached"
 
 const toggleRecipesChecklist = (
   ingredientsChecklist,
@@ -14,12 +14,12 @@ const toggleRecipesChecklist = (
     const recipeNotSelected = notSelected(recipe, selectedRecipe)
     const recipeIsAlreadyChecked = alreadyChecked(recipe)
     const recipeLimitNotReached = limitNotReached(allowMoreRecipeChecks)
-    const checkingRecipeButLimitReached = checkingButLimitReached(
+    const checkRecipeButLimitReached = checkButLimitReached(
       recipe,
       allowMoreRecipeChecks
     )
 
-    if (recipeNotSelected || checkingRecipeButLimitReached) {
+    if (recipeNotSelected || checkRecipeButLimitReached) {
       return recipe
     }
 
