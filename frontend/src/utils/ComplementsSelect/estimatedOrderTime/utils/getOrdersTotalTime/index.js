@@ -1,13 +1,13 @@
-import getComplementsTotalTime from "./utils/getComplementsTotalTime"
-import getRecipesTotalTime from "./utils/getRecipesTotalTime"
+import getComplementsTotalTimeInSeconds from "./utils/getComplementsTotalTimeInSeconds"
+import getRecipesTotalTimeInSeconds from "./utils/getRecipesTotalTimeInSeconds"
 import getIngredientsTotalTime from "./utils/getIngredientsTotalTime"
 import parseNumberToMinutes from "../../../../GLOBAL/parseNumberToMinutes"
 
 const getOrdersTotalTime = (recipesTimes, complementsTimes) => {
-  const recipesTotalTime = getRecipesTotalTime(recipesTimes)
-  const complementsTotalTime = getComplementsTotalTime(complementsTimes)
+  const recipesTotalTimeInSeconds = getRecipesTotalTimeInSeconds(recipesTimes)
+  const complementsTotalTimeInSeconds = getComplementsTotalTimeInSeconds(complementsTimes)
   
-  const allIngredientsTimesSecondsList = [recipesTotalTime, complementsTotalTime]
+  const allIngredientsTimesSecondsList = [recipesTotalTimeInSeconds, complementsTotalTimeInSeconds]
   const ingredientsTotalTime = getIngredientsTotalTime(allIngredientsTimesSecondsList)
 
   const isMinuteInteger = Number.isInteger(ingredientsTotalTime)
