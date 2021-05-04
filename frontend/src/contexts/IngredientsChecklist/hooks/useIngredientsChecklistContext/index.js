@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import IngredientsChecklistContext from '../context'
+import IngredientsChecklistContext from '../../context'
 
 export default function useIngredientsChecklistContext() {
   const {
