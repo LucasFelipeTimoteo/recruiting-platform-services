@@ -6,10 +6,17 @@ export default function useThumbnail() {
 
   useEffect(() => {
     const getlogoIngredient = async () => {
-      const response = await api.get('/ingredients/2')
-      const logoIngredientData = response.data
-      setLogoIngredient(logoIngredientData)
+      try {
+        const response = await api.get('/ingredients/2')
+        const logoIngredientData = response.data
+
+        setLogoIngredient(logoIngredientData)
+      }
+      catch (error) {
+        console.log(error)
+      }
     }
+    
     getlogoIngredient()
   }, [])
 
