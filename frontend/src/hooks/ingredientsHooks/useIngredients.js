@@ -6,11 +6,16 @@ export default function useIngredients() {
 
   useEffect(() => {
     const getIngredients = async () => {
-      const response = await api.get('/ingredients')
-      const ingredientsData = response.data
+      try {
+        const response = await api.get('/ingredients')
+        const ingredientsData = response.data
 
-      setRecipes(ingredientsData)
+        setRecipes(ingredientsData)
+      } catch (error) {
+        console.log(error)
+      }
     }
+    
     getIngredients()
   }, [])
 
