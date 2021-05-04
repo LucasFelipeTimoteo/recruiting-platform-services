@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import toggleRecipesChecklist from '../../../utils/RecipesSelect/toggleRecipesChecklist'
-import toggleComplementsChecklist from '../../../utils/ComplementsSelect/toggleComplementsChecklist'
+import toggleRecipesChecklist from '../../../../utils/RecipesSelect/toggleRecipesChecklist'
+import toggleComplementsChecklist from '../../../../utils/ComplementsSelect/toggleComplementsChecklist'
 
 export default function useIngredientsChecklist(ingredients) {
   const [ingredientsChecklist, setIngredientsChecklist] = useState([])
