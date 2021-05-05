@@ -1,20 +1,29 @@
+//change function name to parseDecimalMinutesInSeconds
+
+import ingredientsTotalTimeParts from "./utils/ingredientsTotalTimeParts"
+import parseFloatMinutesToSeconds from "./utils/parseFloatMinutesToSeconds"
+import secondsWithTwoDigitsOnly from "./utils/secondsWithTwoDigitsOnly"
+import ingredientsTotalTime from "./utils/ingredientsTotalTime"
+
 const getParsedIngredientsTimes = (ingredientsTotalTimeInMinutes) => {
-  const ingredientsTotalTimeInMinutesSplited = String(
-    ingredientsTotalTimeInMinutes
-  ).split('.')
+  const { ingredientsTotalTimeMinutes, ingredientsTotalTimeSeconds } = (
+    ingredientsTotalTimeParts(ingredientsTotalTimeInMinutes)
+  )
 
-  const ingredientsTotalTimeMinutes = ingredientsTotalTimeInMinutesSplited[0]
-  const ingredientsTotalTimeSecounds = ingredientsTotalTimeInMinutesSplited[1]
+  const parsedOrderFloatMinutesToSeconds = parseFloatMinutesToSeconds(
+    ingredientsTotalTimeSeconds
+  )
 
-  const parseFloatMinutesToSecounds = ingredientsTotalTimeSecounds * 60
-  const splitedSecounds = String(parseFloatMinutesToSecounds).split('')
-  splitedSecounds.length = 2
-  const parsedSecounds = splitedSecounds.join('')
+  const IngredientsTotalSecondsWithTwoDigitsOnly = secondsWithTwoDigitsOnly(
+    parsedOrderFloatMinutesToSeconds
+  )
 
-  return [
+  const orderIngredientsTotalTime = ingredientsTotalTime(
     ingredientsTotalTimeMinutes,
-    parsedSecounds
-  ]
+    IngredientsTotalSecondsWithTwoDigitsOnly
+  )
+
+  return orderIngredientsTotalTime
 }
 
 export default getParsedIngredientsTimes
