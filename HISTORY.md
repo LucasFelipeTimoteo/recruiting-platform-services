@@ -170,3 +170,11 @@
 - Criação de testes unitários e de integração para as funções utilitárias
 
 - Cobri a maior parte das funções utilitárias com testes, Amanha terminarei as restantes e aplicarei testes nos hooks
+
+# 04/05/2021
+## Frontend
+- Apenas criei mais alguns testes
+
+## Planejamento
+- procurei uma lib para criar o Timer
+  -  vou testar amanhã algumas que separei
