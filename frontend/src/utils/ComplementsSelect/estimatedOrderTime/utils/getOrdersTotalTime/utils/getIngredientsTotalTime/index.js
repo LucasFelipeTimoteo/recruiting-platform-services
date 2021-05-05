@@ -1,22 +1,20 @@
 import getIngredientsTotalTimeInMinutes from './utils/getIngredientsTotalTimeInMinutes'
 import getParsedIngredientsTimes from './utils/getParsedIngredientsTimes'
+import timeInMinutesIsInteger from './utils/timeInMinutesIsInteger'
 
-const getIngredientsTotalTime = (allIngredientsTimesSecoundsList) => {
+const getIngredientsTotalTime = (allIngredientsTimesSecondsList) => {
   const ingredientsTotalTimeInMinutes = getIngredientsTotalTimeInMinutes(
-    allIngredientsTimesSecoundsList
+    allIngredientsTimesSecondsList
   )
 
-  const isInteger = Number.isInteger(ingredientsTotalTimeInMinutes)
-  if (isInteger) {
+  const minutesIsInteger = timeInMinutesIsInteger(ingredientsTotalTimeInMinutes)
+  if (minutesIsInteger) {
     return ingredientsTotalTimeInMinutes
   }
 
-  const [
-    ingredientsTotalTimeMinutes,
-    parsedSecounds
-  ] = getParsedIngredientsTimes(ingredientsTotalTimeInMinutes)
-
-  const ingredientsTotalTime = `${ingredientsTotalTimeMinutes}${parsedSecounds}`
+  const ingredientsTotalTime = getParsedIngredientsTimes(
+    ingredientsTotalTimeInMinutes
+  )
 
   return ingredientsTotalTime
 }
