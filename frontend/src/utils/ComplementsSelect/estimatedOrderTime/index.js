@@ -5,9 +5,15 @@ import getRecipesTimes from "./utils/getRecipesTimes"
 const estimatedOrderTime = (orders) => {
   const recipesTimes = getRecipesTimes(orders)
   const complementsTimes = getComplementsTimes(orders)
-  const ordersTotalTime = getOrdersTotalTime(recipesTimes, complementsTimes)
+  const {
+    ingredientsTotalTime,
+    ingredientsTotalTimeInSeconds
+  } = getOrdersTotalTime(recipesTimes, complementsTimes)
 
-  return ordersTotalTime
+  return {
+    ingredientsTotalTime,
+    ingredientsTotalTimeInSeconds
+  }
 }
 
 export default estimatedOrderTime
