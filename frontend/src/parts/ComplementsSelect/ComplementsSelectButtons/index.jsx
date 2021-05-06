@@ -3,11 +3,13 @@ import { Button, ButtonGroup } from '@material-ui/core'
 
 import useComplementsSelectButtonsStyles from './styles'
 import handleOrderfinalization from '../../../utils/OrderStandby/handleFinalization'
+import useOrdersTotalTimeContext from '../../../contexts/ordersTotalTimes/hooks/useOrdersTotalTimeContext'
 
 export default function ComplementsSelectButtons({
   setRecipesPageStep,
   selectedRecipesList
 }) {
+  const { handleOrderTime } = useOrdersTotalTimeContext()
   const styles = useComplementsSelectButtonsStyles()
 
   return (
@@ -20,7 +22,7 @@ export default function ComplementsSelectButtons({
       </Button>
       <Button
         className={`${styles.buttonsbaseStyle} ${styles.finalizationButton}`}
-        onClick={() => handleOrderfinalization(selectedRecipesList)}
+        onClick={() => handleOrderfinalization(selectedRecipesList, handleOrderTime)}
       >
         Finalizar
       </Button>
