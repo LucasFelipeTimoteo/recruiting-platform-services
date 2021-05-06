@@ -1,10 +1,10 @@
 import React from 'react'
 import TimerInfoTextTitle from '../TimerInfoTextTitle'
 import TimerInfoTextSubtitle from '../TimerInfoTextSubtitle'
-import useTimerInfoText from './styles'
+import useTimerInfoTextStyles from './styles'
 
 export default function TimerInfoText({ remainingTime }) {
-  const styles = useTimerInfoText()
+  const styles = useTimerInfoTextStyles()
 
   return (
     <div className={styles.timerInfoTextContainer}>
