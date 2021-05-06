@@ -1,9 +1,9 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
-import useTimerInfoTextSubtitle from './styles'
+import useTimerInfoTextSubtitleStyles from './styles'
 
 export default function TimerInfoTextSubtitle() {
-  const styles = useTimerInfoTextSubtitle()
+  const styles = useTimerInfoTextSubtitleStyles()
 
   return (
     <>
