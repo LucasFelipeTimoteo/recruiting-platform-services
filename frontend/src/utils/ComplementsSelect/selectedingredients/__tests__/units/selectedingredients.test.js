@@ -1,8 +1,8 @@
 import selectedRecipesMock from '../../../../../mocks/recipes/selectedRecipes.mock'
 
-const selectedIngredients = selectedRecipesMock.map(recipe => {
+const selectedIngredientsList = selectedRecipesMock.map(recipe => {
   const selectedComplements = recipe.complements.filter(complement => complement.checked)
-  const selectedIngredients = { ...recipe, complements: selectedComplements }
+  const selectedIngredients = {...recipe, complements: selectedComplements}
 
   return selectedIngredients
 })
@@ -15,7 +15,7 @@ describe('Return a array with selected recipes, where any recipe have a property
     test('should return an array with length equal 2', () => {
       const expected = 2
 
-      const selectedIngredientsLength = selectedIngredients.length
+      const selectedIngredientsLength = selectedIngredientsList.length
 
       expect(selectedIngredientsLength).toBe(expected)
     })
