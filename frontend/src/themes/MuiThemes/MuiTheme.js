@@ -42,6 +42,7 @@ let MuiTheme = createMuiTheme({
 
   breakpoints: {
     values: {
+      xs: 290,
       sm: 370,
       md: 600
     },
