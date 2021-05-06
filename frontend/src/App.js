@@ -2,14 +2,17 @@ import Routes from './Routes';
 import { CssBaseline, ThemeProvider } from '@material-ui/core';
 import MuiTheme from './themes/MuiThemes/MuiTheme';
 import './App.css';
+import OrdersTotalTimeProvider from './contexts/ordersTotalTimes/provider';
 
 function App() {
   return (
     <ThemeProvider theme={MuiTheme}>
-      <div className="App">
-        <CssBaseline />
-        <Routes />
-      </div>
+      <OrdersTotalTimeProvider>
+        <div className="App">
+          <CssBaseline />
+          <Routes />
+        </div>
+      </OrdersTotalTimeProvider>
     </ThemeProvider>
   );
 }
