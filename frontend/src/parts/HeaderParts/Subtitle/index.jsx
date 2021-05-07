@@ -5,6 +5,7 @@ export default function Subtitle() {
   return (
     <Typography
       variant="subtitle2"
+      component="h2"
     >
       by Alboom
     </Typography>
