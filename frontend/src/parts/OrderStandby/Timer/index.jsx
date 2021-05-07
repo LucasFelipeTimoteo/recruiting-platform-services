@@ -18,13 +18,12 @@ export default function Timer() {
       onComplete={ringBell}
     >
       {
-        ({ remainingTime }) => {
-          handleOrderTime(remainingTime - 1)
-          
-          return (
-            <TimerInfoText remainingTime={remainingTime} />
-          )
-        }
+        ({ remainingTime }) => (
+          <TimerInfoText
+            handleOrderTime={handleOrderTime}
+            remainingTime={remainingTime}
+          />
+        )
       }
     </CountdownCircleTimer>
   )
