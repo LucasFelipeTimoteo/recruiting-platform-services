@@ -14,6 +14,7 @@ export default function OrderStandbyButtons() {
       <IconButton
         className={styles.returnButton}
         onClick={handleBackToHome}
+        aria-label="Return to register page"
       >
         <RotateLeft />
       </IconButton>
