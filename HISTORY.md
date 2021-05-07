@@ -178,3 +178,14 @@
 ## Planejamento
 - procurei uma lib para criar o Timer
   -  vou testar amanhã algumas que separei
+
+# 06/05/2021
+# Fronted
+- Foi implementada a página de espera e o timer 
+
+- Toda a lógica envolvendo o temporizador foi aplicada
+
+- algumas melhorias de acessibilidade, legibilidade do código e SEO também foram implementadas
+
+- A aplicação frontend já está praticamente pronta
+  - se sobrar um tempo nesse final de semana, vou tentar fazer alguma coisa no backend, se não sobrar, já vou entregar assim mesmo, pois já estou satisfeito, já que meu objetivo era focar apenas no frontend desde o início
