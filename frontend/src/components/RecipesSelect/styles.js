@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core";
 const useRecipesSelectStyles = makeStyles({
   listComponentsWrapper: {
     width: '100%',
+    maxWidth: 800,
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
