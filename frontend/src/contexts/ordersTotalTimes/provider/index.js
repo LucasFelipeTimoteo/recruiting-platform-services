@@ -5,10 +5,10 @@ import useOrdersTotalTimeInSeconds from '../hooks/useOrdersTotalTimeInSeconds'
 export default function OrdersTotalTimeProvider({ children }) {
   const {
     ordersTotalTimeInSeconds,
-    handleOrderTime
+    handlerdersTotalTimeInSeconds
   } = useOrdersTotalTimeInSeconds()
 
-  const providerValues = { ordersTotalTimeInSeconds, handleOrderTime }
+  const providerValues = { ordersTotalTimeInSeconds, handlerdersTotalTimeInSeconds }
 
   return (
     <ordersTotalTimesContext.Provider value={providerValues}>
