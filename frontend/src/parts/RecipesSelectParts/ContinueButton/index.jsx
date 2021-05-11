@@ -19,6 +19,7 @@ export default function ContinueButton({
       variant="contained"
       size="large"
       disableElevation
+      title="Continuar a seleção de ingredientes"
       className={styles.recipesSelectButton}
       onClick={nextPageCondition ? setComplementsPageStep : null}
     >
