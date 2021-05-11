@@ -30,13 +30,14 @@ describe('Test estimatedOrderTime  util functions integration', () => {
     })
   })
 
-  describe('getOrdersTotalTime return a string in format "MINUTES:SECONDS" based in received values of selected complements and selected recipes', () => {
-    test('should return "6:48" to getOrdersTotalTime', () => {
-      const expected = "6:48"
+  describe('getOrdersTotalTime return an object with two values: ingredientsTotalTime, a string value in format "MINUTES:SECONDS" based in received values of selected complements and selected recipes. ingredientsTotalTimeInSeconds, a number value in seconds format, this is the format accepted by database', () => {
+    test('should return "648" to getOrdersTotalTime.ingredientsTotalTime', () => {
+      const expected = "648"
 
       const ordersTotalTime = getOrdersTotalTime(recipesTimes, complementsTimes)
+      const ingredientsTotalTime = ordersTotalTime.ingredientsTotalTime
 
-      expect(ordersTotalTime).toBe(expected)
+      expect(ingredientsTotalTime).toBe(expected)
     })
   })
   
