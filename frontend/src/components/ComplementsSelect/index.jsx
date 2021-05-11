@@ -21,7 +21,7 @@ export default function ComplementsSelect({
     return null
   }
   return (
-    <>
+    <div className={styles.ComplementsSelectWrapper}>
       <Typography
         variant="body2"
         className={styles.listTitle}
@@ -35,6 +35,6 @@ export default function ComplementsSelect({
         setRecipesPageStep={setRecipesPageStep}
         selectedRecipesList={selectedRecipesList}
       />
-    </>
+    </div>
   )
 }
