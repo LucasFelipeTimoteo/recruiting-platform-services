@@ -2,11 +2,11 @@ import { useContext } from "react"
 import ordersTotalTimesContext from "../../context"
 
 const useOrdersTotalTimeContext = () => {
-  const { orderTime, handleOrderTime } = useContext(ordersTotalTimesContext)
+  const { ordersTotalTimeInSeconds, handlerdersTotalTimeInSeconds } = useContext(ordersTotalTimesContext)
 
   return {
-    orderTime,
-    handleOrderTime
+    ordersTotalTimeInSeconds,
+    handlerdersTotalTimeInSeconds
   }
 }
 
