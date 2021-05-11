@@ -1,22 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ordersTotalTimesContext from '../context'
-import getOrderTimeStorage from '../../../utils/GLOBAL/getOrderTimeStorage'
-import setOrderTimeStorage from '../../../utils/GLOBAL/setOrderTimeStorage'
-
+import useOrdersTotalTimeInSeconds from '../hooks/useOrdersTotalTimeInSeconds'
 
 export default function OrdersTotalTimeProvider({ children }) {
-  const initialValue = getOrderTimeStorage() || 0
-  const [orderTime, setOrderTime] = useState(initialValue)
+  const {
+    ordersTotalTimeInSeconds,
+    handleOrderTime
+  } = useOrdersTotalTimeInSeconds()
 
-  const handleOrderTime = (ingredientsTotalTimeInSeconds) => {
-    if (Number.isInteger(ingredientsTotalTimeInSeconds)) {
-      setOrderTimeStorage(ingredientsTotalTimeInSeconds)
-
-      setOrderTime(ingredientsTotalTimeInSeconds)
-    }
-  }
-
-  const providerValues = { orderTime, handleOrderTime }
+  const providerValues = { ordersTotalTimeInSeconds, handleOrderTime }
 
   return (
     <ordersTotalTimesContext.Provider value={providerValues}>
