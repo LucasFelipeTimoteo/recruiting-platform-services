@@ -180,12 +180,36 @@
   -  vou testar amanhã algumas que separei
 
 # 06/05/2021
-# Fronted
+## Fronted
 - Foi implementada a página de espera e o timer 
 
 - Toda a lógica envolvendo o temporizador foi aplicada
 
-- algumas melhorias de acessibilidade, legibilidade do código e SEO também foram implementadas
+- Algumas melhorias de acessibilidade, legibilidade do código e SEO também foram implementadas
 
 - A aplicação frontend já está praticamente pronta
   - se sobrar um tempo nesse final de semana, vou tentar fazer alguma coisa no backend, se não sobrar, já vou entregar assim mesmo, pois já estou satisfeito, já que meu objetivo era focar apenas no frontend desde o início
+
+# 10/05/2021
+## Frontend
+
+- Finalização do frontend
+
+- Optimização dos componentes aplicando memoização em determinados componentes
+
+- Acessibilidade aplicando "title" em determinados componentes
+
+- Criação de novas funções e separação de funcionalidades usando os princípios S.O.L.I.D
+
+## Backend
+
+- Criação de um document no banco de dados para as orders feitas pelo usuário
+
+- Criação da rota de tratamento de dados para as orders
+
+## planejamentos
+
+- A aplicação já está pronta, mas quero optimizar mais um pouco
+  - amanhã, aplicarei testes unitários para as funções restantes e procurarei por nomes que podem ser melhorados
+
+- Se tudo der certo e eu tiver tempo, amanhã estará tudo feito
