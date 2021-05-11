@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { memo } from 'react'
 import useIngredientsChecklistContext from '../../../contexts/IngredientsChecklist/hooks/useIngredientsChecklistContext'
 import useRecipeListItemStyles from './styles'
 
-export default function RecipeListItem({
+function RecipeListItem({
   children,
   recipe,
 }) {
@@ -12,6 +12,7 @@ export default function RecipeListItem({
   return (
     <>
       <li
+        title={`Clique aqui para selecionar a receita "${recipe.name}"`}
         className={styles.recipeListItem}
         onClick={() => {
           handleRecipesChecklist(recipe)
@@ -22,3 +23,5 @@ export default function RecipeListItem({
     </>
   )
 }
+
+export default memo(RecipeListItem)
