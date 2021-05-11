@@ -18,7 +18,10 @@ export default function SelectedRecipesComplementsList({ selectedRecipesList }) 
             className={styles.selectedRecipesComplementsList}
           >
             <li className={styles.selectedRecipesComplementsListItem}>
-              <div className={styles.selectedRecipeInfo}>
+              <div
+                className={styles.selectedRecipeInfo}
+                title={`Receita "${recipe.name}" selecionada`}
+              >
                 <IngredientThumbnail ingredient={recipe} />
                 <IngredientInfo ingredient={recipe} />
               </div>
