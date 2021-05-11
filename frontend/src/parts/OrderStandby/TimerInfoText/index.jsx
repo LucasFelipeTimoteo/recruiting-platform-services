@@ -3,13 +3,13 @@ import TimerInfoTextTitle from '../TimerInfoTextTitle'
 import TimerInfoTextSubtitle from '../TimerInfoTextSubtitle'
 import useTimerInfoTextStyles from './styles'
 
-export default function TimerInfoText({ remainingTime, handleOrderTime }) {
+export default function TimerInfoText({ remainingTime, handlerdersTotalTimeInSeconds }) {
   const styles = useTimerInfoTextStyles()
 
   return (
     <div className={styles.timerInfoTextContainer}>
       <TimerInfoTextTitle
-        handleOrderTime={handleOrderTime}
+        handlerdersTotalTimeInSeconds={handlerdersTotalTimeInSeconds}
         remainingTime={remainingTime}
       />
       <TimerInfoTextSubtitle />
