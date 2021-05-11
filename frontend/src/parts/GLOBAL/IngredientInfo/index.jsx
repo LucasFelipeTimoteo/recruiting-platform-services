@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { memo } from 'react'
 import IngredientName from '../IngredientName'
 import IngredientTime from '../IngredientTime'
 import useIngredientsInfoStyles from './styles'
 
-export default function IngredientInfo({ ingredient }) {
+function IngredientInfo({ ingredient }) {
   const styles = useIngredientsInfoStyles()
 
   return (
@@ -13,3 +13,5 @@ export default function IngredientInfo({ ingredient }) {
     </div>
   )
 }
+
+export default memo(IngredientInfo)
