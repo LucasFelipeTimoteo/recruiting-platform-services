@@ -3,12 +3,12 @@ import { Typography } from '@material-ui/core'
 import useTimerInfoTextTitleStyles from './styles'
 import timerDisplay from '../../../utils/OrderStandby/timerDisplay'
 
-export default function TimerInfoTextTitle({ remainingTime, handleOrderTime }) {
+export default function TimerInfoTextTitle({ remainingTime, handlerdersTotalTimeInSeconds }) {
   const timerDisplayCounter = timerDisplay(remainingTime)
   useEffect(() => {
     const storeCondition = remainingTime > 0 ? remainingTime - 1 : remainingTime
-    handleOrderTime(storeCondition)
-  }, [remainingTime, handleOrderTime])
+    handlerdersTotalTimeInSeconds(storeCondition)
+  }, [remainingTime, handlerdersTotalTimeInSeconds])
 
   const styles = useTimerInfoTextTitleStyles()
 
