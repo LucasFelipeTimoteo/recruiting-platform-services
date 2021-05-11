@@ -5,7 +5,7 @@ const useComplemetsListItem = makeStyles({
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'center',
-    padding:  '2px 0 0 40px',
+    padding:  '2px 0 0 27px',
   }
 })
 
