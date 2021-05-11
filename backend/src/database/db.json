@@ -95,7 +95,7 @@
           "time": 30
         },
         {
-          "id": 2,
+          "id": 4,
           "name": "Cookie",
           "image": {
             "src": "images/cookie.svg",
@@ -133,7 +133,7 @@
           "time": 30
         },
         {
-          "id": 2,
+          "id": 5,
           "name": "Cupcake",
           "image": {
             "src": "images/cupcake.svg",
@@ -142,7 +142,7 @@
           "time": 20
         },
         {
-          "id": 3,
+          "id": 4,
           "name": "Cookie",
           "image": {
             "src": "images/cookie.svg",
@@ -180,7 +180,7 @@
           "time": 20
         },
         {
-          "id": 3,
+          "id": 5,
           "name": "Cupcake",
           "image": {
             "src": "images/cupcake.svg",
