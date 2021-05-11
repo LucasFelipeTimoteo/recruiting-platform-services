@@ -5,22 +5,22 @@ import ringBell from '../../../utils/OrderStandby/ringBell'
 import useOrdersTotalTimeContext from '../../../contexts/ordersTotalTimes/hooks/useOrdersTotalTimeContext'
 
 export default function Timer() {
-  const { orderTime, handleOrderTime } = useOrdersTotalTimeContext()
+  const { ordersTotalTimeInSeconds, handlerdersTotalTimeInSeconds } = useOrdersTotalTimeContext()
 
   return (
     <CountdownCircleTimer
       id="countdown"
       size={250}
       isPlaying
-      duration={orderTime}
-      initialRemainingTime={orderTime}
+      duration={ordersTotalTimeInSeconds}
+      initialRemainingTime={ordersTotalTimeInSeconds}
       colors={[['#2ee897', 0.70], ['#F7B801', 0.28], ['#A30000']]}
       onComplete={ringBell}
     >
       {
         ({ remainingTime }) => (
           <TimerInfoText
-            handleOrderTime={handleOrderTime}
+            handlerdersTotalTimeInSeconds={handlerdersTotalTimeInSeconds}
             remainingTime={remainingTime}
           />
         )
