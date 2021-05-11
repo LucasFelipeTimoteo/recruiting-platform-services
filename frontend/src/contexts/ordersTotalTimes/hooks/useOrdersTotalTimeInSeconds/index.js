@@ -4,18 +4,18 @@ import setOrderTimeStorage from '../../../../utils/GLOBAL/setOrderTimeStorage'
 
 export default function useOrdersTotalTimeInSeconds() {
   const initialValue = getOrderTimeStorage() || 0
-  const [ordersTotalTimeInSeconds, setOrderTime] = useState(initialValue)
+  const [ordersTotalTimeInSeconds, setOrdersTotalTimeInSeconds] = useState(initialValue)
 
-  const handleOrderTime = (ingredientsTotalTimeInSeconds) => {
+  const handlerdersTotalTimeInSeconds = (ingredientsTotalTimeInSeconds) => {
     if (Number.isInteger(ingredientsTotalTimeInSeconds)) {
       setOrderTimeStorage(ingredientsTotalTimeInSeconds)
 
-      setOrderTime(ingredientsTotalTimeInSeconds)
+      setOrdersTotalTimeInSeconds(ingredientsTotalTimeInSeconds)
     }
   }
 
   return {
     ordersTotalTimeInSeconds, 
-    handleOrderTime
+    handlerdersTotalTimeInSeconds
   }
 }
