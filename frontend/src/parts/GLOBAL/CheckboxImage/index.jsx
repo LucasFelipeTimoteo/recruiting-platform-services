@@ -3,12 +3,14 @@ import useCheckboxStyles from './styles'
 
 export default function CheckboxImage({ checked, small }) {
   const src = checked ? 'check-ok.svg' : 'check-empty.svg'
+  const altText =  checked ? 'checked checkbox' : 'unchecked checkbox'
+  
   const styles = useCheckboxStyles()
 
   return (
     <img
       src={`${process.env.PUBLIC_URL}images/${src}`}
-      alt="test"
+      alt={altText}
       width="30px"
       height="30px"
       className={`
