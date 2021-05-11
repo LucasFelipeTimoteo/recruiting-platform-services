@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 import useIngredientThumbnailStyles from './styles'
 
-export default function IngredientThumbnail({ ingredient, small }) {
+function IngredientThumbnail({ ingredient, small }) {
   const styles = useIngredientThumbnailStyles()
 
   return (
@@ -18,3 +18,5 @@ export default function IngredientThumbnail({ ingredient, small }) {
     </>
   )
 }
+
+export default memo(IngredientThumbnail)
