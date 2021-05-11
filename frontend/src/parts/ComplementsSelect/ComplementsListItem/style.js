@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 
-const useComplemetsListItem = makeStyles({
+const useComplemetsListItemStyles = makeStyles({
   listItem: {
     display: 'flex',
     justifyContent: 'flex-start',
@@ -9,4 +9,4 @@ const useComplemetsListItem = makeStyles({
   }
 })
 
-export default useComplemetsListItem
+export default useComplemetsListItemStyles
