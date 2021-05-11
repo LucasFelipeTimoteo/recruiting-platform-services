@@ -9,7 +9,7 @@ const getIngredientsTotalTime = (allIngredientsTimesSecondsList) => {
 
   const minutesIsInteger = timeInMinutesIsInteger(ingredientsTotalTimeInMinutes)
   if (minutesIsInteger) {
-    return ingredientsTotalTimeInMinutes
+    return String(ingredientsTotalTimeInMinutes)
   }
 
   const ingredientsTotalTime = getParsedIngredientsTimes(
