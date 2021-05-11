@@ -18,12 +18,14 @@ export default function ComplementsSelectButtons({
   return (
     <ButtonGroup className={styles.buttonsGroup}>
       <Button
+        title="Voltar para a seleção de receitas de café"
         className={`${styles.buttonsbaseStyle} ${styles.returnButton}`}
         onClick={setRecipesPageStep}
       >
         Voltar
       </Button>
       <Button
+        title="Confirmar pedido"
         className={`${styles.buttonsbaseStyle} ${styles.finalizationButton}`}
         onClick={() => handleOrderfinalization({
           selectedRecipesList,
