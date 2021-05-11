@@ -12,6 +12,7 @@ export default function ComplementsListItem({
 
   return (
     <li
+      title={`Clique aqui para selecionar o complemento "${complement.name}"`}
       className={styles.listItem}
       onClick={() => { handleComplementsChecklist(complement, recipe) }}
     >
