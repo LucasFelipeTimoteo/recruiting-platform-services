@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 import useCheckboxStyles from './styles'
 
-export default function CheckboxImage({ checked, small }) {
+function CheckboxImage({ checked, small }) {
   const src = checked ? 'check-ok.svg' : 'check-empty.svg'
   const altText =  checked ? 'checked checkbox' : 'unchecked checkbox'
   
@@ -20,3 +20,5 @@ export default function CheckboxImage({ checked, small }) {
     />
   )
 }
+
+export default memo(CheckboxImage)
