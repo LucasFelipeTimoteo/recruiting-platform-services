@@ -18,7 +18,7 @@ see in [tree.md](./tree.md)
 - [**contexts**](./frontend/src/contexts): contains react context-API content
   - **"MY_CONTEXT_FOLDER"/context**: contains the reference of context itself
   - **"MY_CONTEXT_FOLDER"/provider**: contains the "MY_CONTEXT".Provider component and the reference of data will be passed by context
-  - **"MY_CONTEXT_FOLDER"/hooks**: contains the states and related context logic. It will be passed to "MY_CONTEXT_FOLDER"/provider
+  - **"MY_CONTEXT_FOLDER"/hooks**: contains two types of hooks: the states and related context logic to place in provider component and the hooks to get provider values in other components
 
 - [**mocks**](./frontend/src/mocks): contains the mock data to use in tests
 
