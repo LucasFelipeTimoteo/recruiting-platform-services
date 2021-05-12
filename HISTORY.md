@@ -213,3 +213,12 @@
   - amanhã, aplicarei testes unitários para as funções restantes e procurarei por nomes que podem ser melhorados
 
 - Se tudo der certo e eu tiver tempo, amanhã estará tudo feito
+
+# 11/05/2021
+## Frontend
+
+- Finalização da aplicação 🥳🎉
+
+- Criação de alguns testes unitários
+
+- Criação da documentação da aplicação
